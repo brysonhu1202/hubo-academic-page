@@ -36,13 +36,13 @@ education:
   courses:
     - course: Master in Applied Psychology
       institution: Northeast Normal University
-      year: 2021
+      year: 2021-2023
     - course: BA in Marketing
       institution: Beijing University of Posts and Telecommunications
-      year: 2018
+      year: 2018-2021
     - course: Maintenance and Management of Electromechanical Equipment
       institution: ShiJiaZhuang Posts and Telecommunications Technical College
-      year: 2015
+      year: 2015-2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
