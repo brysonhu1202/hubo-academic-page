@@ -2,6 +2,14 @@
 # Display name
 title: Bo Hu 胡博
 
+# Full name (for SEO)
+first_name: Bo
+last_name: Hu
+
+# Status emoji
+status:
+  icon: ☕️
+
 # Is this the primary user of the site?
 superuser: true
 
