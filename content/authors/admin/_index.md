@@ -51,7 +51,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'hub897@nenu.edu'
+    link: hub897@nenu.edu
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/bryson23437800
@@ -61,9 +61,11 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/brysonhu1202
-  - icon: open-data
-    icon_pack: academicons
-    link: https://osf.io/mxw4j
+    
+  # - icon: open-data
+  #   icon_pack: academicons
+  #   link: https://osf.io/mxw4j
+
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
