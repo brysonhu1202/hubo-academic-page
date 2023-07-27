@@ -22,29 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Research Assistant of CUHK
-    company: CUHK
-    company_url: ''
-    company_logo: cuhk
-    location: Hong Kong
-    date_start: '2018-06-01'
-    date_end: '2019-10-01'
-    description: |2-
-        Responsibilities include:
-        
-        * Developoing 12 DOF Indoor Painting Robot
-        * Control Framework Implementation
-        * Hardware Implementation
+  - title: Facilities Section
+    company: China Post
+    company_url: 'http://www.chinapost.com.cn/'
+    company_logo: China Post
+    location: Si Ping, China
+    date_start: '2018'
+    date_end: '2021'
 
-  - title: Software Engineer of DJI
-    company: DJI
-    company_url: 'https://www.dji.com/'
-    company_logo: dji
-    location: Shenzhen
-    date_start: '2016-05-01'
-    date_end: '2018-05-30'
-    description: Big data collection and analysis 
 
 design:
-  columns: '2'
+  columns: '1'
 ---
