@@ -40,7 +40,7 @@ education:
     - course: BA in Marketing
       institution: Beijing University of Posts and Telecommunications
       year: 2018
-    - course: Maintenance and management of electromechanical equipment
+    - course: Maintenance and Management of Electromechanical Equipment
       institution: ShiJiaZhuang Posts and Telecommunications Technical College
       year: 2015
 
@@ -51,22 +51,21 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: hub897@nenu.edu
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://twitter.com/bryson23437800
+    # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+    # icon_pack: fas
+    # link:  
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://github.com/brysonhu1202
+    
+  # - icon: open-data
+  #   icon_pack: academicons
+  #   link: https://osf.io/mxw4j
+
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
