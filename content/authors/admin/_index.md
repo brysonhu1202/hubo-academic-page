@@ -1,81 +1,71 @@
 ---
-# Display name
-title: Bo Hu 胡博
-
-# Full name (for SEO)
-first_name: Bo
-last_name: Hu
-
-# Status emoji
-status:
-  icon: ☕️
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position/tagline
-role: Master
-
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: Northeast Normal University (NENU)
-    url: https://www.nenu.edu.cn/
-
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include environmental psychology and misinformation.
-
-# Interests to show in About widget
-interests:
-  - Low-carbon
-  - Misinformation (inoculation)
-  - Environmrnatal psychology
-
-# Education to show in About widget
+bio: My research interests include Environmental Behaviour、Environmental Economics and Meta Science.
 education:
   courses:
-    - course: Master in Applied Psychology
-      institution: Northeast Normal University
-      year: 2021-2023
-    - course: BA in Marketing
-      institution: Beijing University of Posts and Telecommunications
-      year: 2018-2021
-    - course: Maintenance and management of electromechanical equipment
-      institution: ShiJiaZhuang Posts and Telecommunications Technical College
-      year: 2015-2018
-
-# Social/Academic Networking
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'hub897@nenu.edu'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/bryson23437800
-  - # icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    # icon_pack: fas
-    # link:  
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/brysonhu1202
-  - icon: open-data
-    icon_pack: academicons
-    link: https://osf.io/mxw4j
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
-
-# Highlight the author in author lists? (true/false)
+  - course: Master in Public Policy
+    institution: Tongji University
+    year: 2022-2024
+  - course: BEc in Economic Statistics
+    institution: Nanchang University
+    year: 2018-2022
+  - course: BSc (minor) in Applied Psychology
+    institution: Nanchang University
+    year: 2020-2022    
+email: "Ziqian.research@gmail.com"
 highlight_name: true
+interests:
+- Environmental Behaviour
+- Climate Change
+- Research Synthesis
+organizations:
+- name: Tongji University
+  url: https://en.tongji.edu.cn/
+role: Graduate Student
+social:
+- icon: envelope
+  icon_pack: fas
+  link: /#contact
+- display:
+    header: true
+  icon: twitter
+  icon_pack: fab
+  label: Follow me on Twitter
+  link: https://twitter.com/ziqian_xia
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net/profile/Ziqian-Xia
+- icon: github
+  icon_pack: fab
+  link: https://github.com/ziqian-xia
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao
+  
+superuser: true
+title: Ziqian Xia (夏子谦)
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-{style="text-align: justify;"}
+Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
+
+- I am interested in research on the human and policy dimensions of climate change. Currently I am trying to understand climate change mitigation / adaptation behavior using IoT-based and remote sensing techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
+
+- I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. 
+
+Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm).
+
+**I am actively looking for a Ph.D. position, please feel free to contact me.**
+
+My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
+
+Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/). [*CEEDER*](https://environmentalevidence.org/ceeder/) Review College/Screening Team Member.
+
+Ad Hoc Reviewer: 
+- *Global Environmental Change* 
+- *Environmental Evidence*
+- *Environment, Development and Sustainability*
+- *Resources, Conservation & Recycling Advances* 
+- *Cleaner Environmental Systems*
+- *Frontiers in Earth Science*
+- *Current Research in Behavioral Sciences*
+
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
