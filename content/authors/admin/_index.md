@@ -51,7 +51,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: hub897@nenu.edu
+    link: 'hub897@nenu.edu'
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/bryson23437800
@@ -61,10 +61,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/brysonhu1202
-    
-  # - icon: open-data
-  #   icon_pack: academicons
-  #   link: https://osf.io/mxw4j
+  - icon: open-data
+    icon_pack: academicons
+    link: https://osf.io/mxw4j
 
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
@@ -80,5 +79,5 @@ email: ''
 highlight_name: true
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Bo Hu received his Master's degree in Applied Psychology from Northeast Normal University, where his research focused on the problem of misinformation on the Internet and online intervention facilitation (based on inoculation theory). Now, he focuses on climate change issues in China, specifically, the current status of Chinese citizens' low-carbon lifestyles (based on online questionnaires, experiments, and social media data) and intervention facilitation (nudge), from which he explores the mechanisms of intervention (cognitive modeling).
 {style="text-align: justify;"}
