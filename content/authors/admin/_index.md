@@ -56,7 +56,7 @@ social:
     icon_pack: fab
     link: https://twitter.com/bryson23437800
   - icon: open-data
-    icon_pack: academicons
+    icon_pack: ai
     link: https://osf.io/mxw4j
   - icon: github
     icon_pack: fab
