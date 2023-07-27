@@ -58,8 +58,8 @@ sections:
           company_url: http://www.chinapost.com.cn/
           company_logo: China Post
           location: Si Ping, China
-          date_start: '2018-08-'
-          date_end: '2021-07'
+          date_start: '2018-08-01'
+          date_end: '2021-07-01'
     design:
       columns: '2'
   - block: accomplishments
