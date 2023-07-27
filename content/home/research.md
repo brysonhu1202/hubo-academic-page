@@ -27,14 +27,14 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Optimal Control
-      tag: Optimal Control
-    - name: Reinforcement Learning
-      tag: Reinforcement Learning
-    - name: Legged Robot
-      tag: Legged Robot
-    - name: Other
-      tag: Demo
+    - name: Environmental psychology
+      tag: Enviromental psychology
+    - name: Low-carbon
+      tag: Low-carbon
+    - name: Climate change
+      tag: Climate change
+    - name: Misinformation
+      tag: Misinformation
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
