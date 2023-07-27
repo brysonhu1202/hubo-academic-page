@@ -61,7 +61,7 @@ sections:
           date_start: '2018-08'
           date_end: '2021-07'
     design:
-      columns: '1'
+      columns: '2'
   - block: collection
     id: posts
     content:
