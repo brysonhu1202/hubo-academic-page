@@ -120,7 +120,7 @@ ggplot(data = mpg) +
 ```
 
 ```{r echo=FALSE, fig.cap="R的25种内置形状", warning=FALSE}
-knitr::include_graphics("R数据科学笔记_insertimage_1.png")
+![]("R数据科学笔记_insertimage_1.png")
 ```
 
 ```{r}
