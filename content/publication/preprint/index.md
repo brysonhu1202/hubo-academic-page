@@ -1,12 +1,18 @@
 ---
-title: "An example preprint / working paper"
+title: "Can Media Literacy Interventions Improve Fake News Discernment? A Meta-Analysis"
 authors:
+- Chang Lu
 - admin
-date: "2019-04-07T00:00:00Z"
-doi: ""
+- Meng-Meng Bao
+- Chi Wang
+- Chao Bi
+- Xing-Da Ju
+
+date: "2023-05-14T00:00:00Z"
+doi: https://dx.doi.org/10.2139/ssrn.4377372
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2023-05-14T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -18,20 +24,24 @@ publication_types: ["3"]
 publication: ""
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The negative impact of fake news involves not only personal perception and decision-making but also various aspects of society, such as public opinion, the economy, politics, etc. Improving individuals’ ability to discern fake news can reduce its harmful effects while enhancing media literacy is an effective way to better deal with it. However, previous research on media literacy interventions in improving fake news discernment has not yielded consistent results. This study systematically collected 33 independent studies and used meta-analysis to examine the effect of media literacy interventions in enhancing fake news discernment (n=36,256). Results showed that media literacy interventions significantly improved fake news discernment (d=0.53, 95%CI [0.28, 0.78]). Interventions were more effective in the course, game, and video intervention forms, and participants were older adults. In contrast, intervention location and measuring time did not influence the intervention effect.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: ""
 
 tags:
-- Source Themes
+- Media literacy
+- Intervention
+- Fake news
+- Meta-analysis
+
 featured: false
 
 links:
-- name: Custom Link
-  url: http://example.org
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+- name: Can Media Literacy Interventions Improve Fake News Discernment? A Meta-Analysis
+  url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
+url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372
+url_code: 'https://osf.io/a3fch/'
 url_dataset: '#'
 url_poster: '#'
 url_project: ''
