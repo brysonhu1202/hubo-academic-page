@@ -1433,15 +1433,11 @@ exp(coef(fit))
 **主成分分析（PCA）**是一种数据降维技巧，它能将大量相关变量转化为一组很少的不相关变量，这些无关变量称为主成分。\
 **探索性因子分析（EFA）**是一系列用来发现一组变量的潜在结构的方法。它通过寻找一组更小的、潜在的或隐藏的结构来解释已观测到的、显式的变量间的关系。
 
-```{r , echo=FALSE, fig.cap="主成分分析与因子分析模型", out.width = '50%'}
-knitr::include_graphics("R语言实战笔记_insertimage_20.png")
-```
+![](R语言实战笔记_insertimage_20.png)
 
 分析步骤
 
-```{r , echo=FALSE, fig.cap="主成分分析与因子分析流程", out.width = '35%'}
-knitr::include_graphics("R语言实战笔记_insertimage_21.png")
-```
+![](R语言实战笔记_insertimage_21.png)
 
  
 
@@ -1760,9 +1756,7 @@ as.matrix(d)[1:4,1:4]
 (3) 把距离最短的两类合并成一类，这样类的个数就减少一个；\
 (4) 重复步骤(2)和步骤(3)，直到包含所有观测值的类合并成单个的类为止。\
 
-```{r , fig.cap="层次聚类方法", warning=FALSE, out.width = '60%'}
-knitr::include_graphics("R语言实战笔记_insertimage_22.png")
-```
+![](R语言实战笔记_insertimage_22.png)
 
 ```{r}
 data(nutrient, package="flexclust")
@@ -2026,9 +2020,7 @@ svm.perf #评估交叉验证表现
 
 ## 通过不同模型选择最优解
 
-```{r , fig.cap="评估参数", warning=FALSE}
-knitr::include_graphics("R语言实战笔记_insertimage_23.png")
-```
+![](R语言实战笔记_insertimage_23.png)
 
 ```{r}
 performance <- function(table, n=2){
@@ -2145,21 +2137,15 @@ imp # 查看多重插补具体内容
 
 ## 处理缺失数据的其他方法
 
-```{r , fig.cap="处理缺失数据的其他方法", warning=FALSE}
-knitr::include_graphics("R语言实战笔记_insertimage_24.png")
-```
+![](R语言实战笔记_insertimage_24.png)
 
  
 
 # ggplot2进行高级绘图
 
-```{r ,echo=FALSE, fig.cap="常见几何函数", warning=FALSE, out.width = '60%' }
-knitr::include_graphics("R语言实战笔记_insertimage_25.png")
-```
+![](R语言实战笔记_insertimage_25.png)
 
-```{r ,echo=FALSE, fig.cap="基本选项", warning=FALSE, out.width = '60%' }
-knitr::include_graphics("R语言实战笔记_insertimage_26.png")
-```
+![](R语言实战笔记_insertimage_26.png)
 
  
 
@@ -2238,9 +2224,7 @@ ggplot(data=singer, aes(x=height, fill=voice.part)) +
 
 ## 添加光滑曲线
 
-```{r echo=FALSE, fig.cap="平滑曲线选项", warning=FALSE}
-knitr::include_graphics("R语言实战笔记_insertimage_27.png")
-```
+![](R语言实战笔记_insertimage_27.png)
 
 ```{r}
 data(Salaries, package="carData")
@@ -2451,9 +2435,8 @@ system.time(  #并行执行时间
 
 ## 调试工具
 
-```{r echo=FALSE, fig.cap="内部调试函数", warning=FALSE}
-knitr::include_graphics("R语言实战笔记_insertimage_28.png")
-```
+
+![](R语言实战笔记_insertimage_28.png)
 
 ```{r eval=FALSE}
 f <- function(x, y){
