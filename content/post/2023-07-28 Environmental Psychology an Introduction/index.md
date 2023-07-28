@@ -1,8 +1,8 @@
-------------------------------------------------------------------------
+---
 
 title: Environmental Psychology an Introduction
 
-subtitle: Steg, L., & Groot, J. I. M. de. (2019). *Environmental Psychology: An Introduction 2nd Edition*. Wiley-Blackwell.
+subtitle: 'Steg, L., & Groot, J. I. M. de. (2019). *Environmental Psychology: An Introduction 2nd Edition*. Wiley-Blackwell'
 
 authors:
 
@@ -26,7 +26,7 @@ image:
 
   focal_point: ''
 
-------------------------------------------------------------------------
+---
 
 \[\[Environmental Psychology an Introduction_image_1.png\]\]
 

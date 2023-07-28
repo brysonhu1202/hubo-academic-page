@@ -5,8 +5,8 @@ authors:
   - admin
 tags: [环境社会学]
 categories: [Environmental Psychology]
-date: '2023-07-08T00:00:00Z'
-lastMod: '2023-07-08T00:00:00Z'
+date: '2023-07-28T00:00:00Z'
+lastMod: '2023-07-28T00:00:00Z'
 image:
   caption: ''
   focal_point: ''
