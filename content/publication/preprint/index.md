@@ -38,16 +38,12 @@ tags:
 featured: false
 
 links:
-- name: Can Media Literacy Interventions Improve Fake News Discernment? A Meta-Analysis
+- name: full text
   url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
-url_pdf: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372
+url_pdf: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
 url_code: 'https://osf.io/a3fch/'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+url_dataset: 'https://osf.io/a3fch/'
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
