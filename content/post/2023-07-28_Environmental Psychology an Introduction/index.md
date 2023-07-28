@@ -2,14 +2,11 @@
 title: Environmental Psychology an Introduction
 subtitle: Note of Environmental Psychology an Introduction.
 
-# Link this post with a project
-projects: []
-
 # Date published
-date: '2020-12-13T00:00:00Z'
+date: '2023-07-28T00:00:00Z'
 
 # Date updated
-lastmod: '2020-12-13T00:00:00Z'
+lastmod: '2023-07-28T00:00:00Z'
 
 authors:
   - admin
