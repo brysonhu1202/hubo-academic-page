@@ -2,7 +2,7 @@
 title: 环境社会学
 subtitle: 环境社会学笔记，洪大用著
 authors:
-  - Bo Hu
+  - admin
 tags: [环境社会学]
 categories: [Environmental Psychology]
 date: '2023-07-08T00:00:00Z'
