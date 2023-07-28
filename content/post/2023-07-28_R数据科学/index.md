@@ -119,9 +119,8 @@ ggplot(data = mpg) +
 # 设置形状
 ```
 
-```{r echo=FALSE, fig.cap="R的25种内置形状", warning=FALSE}
-![]("R数据科学笔记_insertimage_1.png")
-```
+![](R数据科学笔记_insertimage_1.png)
+
 
 ```{r}
 ggplot(data = mpg) + 
@@ -199,10 +198,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ggplot(data = diamonds) + 
   geom_bar(mapping = aes(x = cut))
 ```
-
-```{r echo=FALSE, fig.cap="统计变换过程", warning=FALSE}
-knitr::include_graphics("R数据科学笔记_insertimage_2.png")
-```
+![](R数据科学笔记_insertimage_2.png)
 
 ```{r}
 # 调整为比例
@@ -342,21 +338,15 @@ position = \<POSITION\>\
 如何从头开始构建一个基本图形\
 1、首先需要有一个数据集，然后（通过统计变换）将其转换为想要显示的信息\
 
-```{r echo=FALSE, fig.cap="图形构建过程", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_3.png")
-```
+![](R数据科学笔记_insertimage_3.png)
 
 2、选择一个几何对象来表示转换后的数据中的每个观测值，然后选择几何对象的图形属性来表示数据中的变量，这会将每个变量的值映射为图形属性的水平。\
 
-```{r echo=FALSE, fig.cap="图形构建过程", warning=FALSE}
-knitr::include_graphics("R数据科学笔记_insertimage_4.png")
-```
+![](R数据科学笔记_insertimage_4.png)
 
 3、选择放置几何对象的坐标系。你可以使用对象本身的一个图形属性来显示 x 变量和 y变量的值。这样就生成了一张完整的图。之后可以设置详细属性。\
 
-```{r echo=FALSE, fig.cap="图形构建过程", warning=FALSE}
-knitr::include_graphics("R数据科学笔记_insertimage_5.png")
-```
+![](R数据科学笔记_insertimage_5.png)
 
 
 ## ggplot精简化
@@ -442,9 +432,7 @@ cume_dist(y)
 ```
 
 **逻辑运算符**
-```{r echo=FALSE, fig.cap="逻辑运算符", warning=FALSE}
-knitr::include_graphics("R数据科学笔记_insertimage_6.png")
-```
+![](R数据科学笔记_insertimage_6.png)
 
 
 ## 使用filter()筛选
@@ -812,9 +800,7 @@ ggplot(
    geom_freqpoly(mapping = aes(color = cut), binwidth = 500)
 ```
 **方法2**：箱线图\
-```{r echo=FALSE, fig.cap="箱线图介绍", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_7.png")
-```
+![](R数据科学笔记_insertimage_7.png)
 
 ```{r}
 #  geom_boxplot() 函数查看按切割质量分类的价格分布
@@ -1162,13 +1148,10 @@ weather %>%
 \
 有颜色的列表示作为“键”的变量：它们用于在表间匹配行。灰色列表示“值”列，是与键对应的值。\
 连接是将 x 中每行连接到 y 中 0 行、一行或多行的一种方法。\
-```{r echo=FALSE, fig.cap="理解连接", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_8.png")
-```
+![](R数据科学笔记_insertimage_8.png)
+
 匹配在实际的连接操作中是用圆点表示的。圆点的数量 = 匹配的数量 = 结果中行的数量。\
-```{r echo=FALSE, fig.cap="连接操作", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_9.png")
-```
+![](R数据科学笔记_insertimage_9.png)
 
 ```{r}
 flights2 <- flights %>% 
@@ -1214,15 +1197,11 @@ x %>%
 •  左连接：保留 x 中的所有观测。\
 •  右连接：保留 y 中的所有观测\
 •  全连接：保留 x 和 y 中的所有观测。\
-```{r echo=FALSE, fig.cap="外连接", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_10.png")
-```
+![](R数据科学笔记_insertimage_10.png)
 
 **重复键**\
 两张表中都有重复键。这通常意味着出现了错误，因为键在任意一张表中都不能唯一标识观测。当连接这样的重复键时，你会得到所有可能的组合，即笛卡儿积。
-```{r echo=FALSE, fig.cap="重复", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_11.png")
-```
+![](R数据科学笔记_insertimage_11.png)
 
 ```{r}
 x <- tribble( 
@@ -1260,13 +1239,10 @@ flights2 %>%
 
 ## 筛选连接
 •  semi_join(x, y)：保留 x 表中与 y 表中的观测相匹配的所有观测。\
-```{r echo=FALSE, fig.cap="半连接", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_12.png")
-```
+![](R数据科学笔记_insertimage_12.png)
+
 •  anti_join(x, y)：丢弃 x 表中与 y 表中的观测相匹配的所有观测。\
-```{r echo=FALSE, fig.cap="反连接", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_13.png")
-```
+![](R数据科学笔记_insertimage_13.png)
 
 ```{r}
 # 设定筛选数据
@@ -1620,9 +1596,7 @@ update(datetime, year = 2020, month = 2, mday = 2, hour = 2) # 同步设置
 • **时期**：以秒为单位表示一段精确的时间。\
 • **阶段**：表示由人工定义的一段时间，如几周或几个月。\
 • **区间**：表示从起点到终点的一段时间。\
-```{r echo=FALSE, fig.cap="不同时间间隔", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_14.png")
-```
+![](R数据科学笔记_insertimage_14.png)
 
 ```{r}
 # 时期
@@ -1923,9 +1897,8 @@ mtcars %>%
 向量类型：  
 **原子向量** ：共有 6 种类型： 逻辑型 、 整型 、 双精度型 、 字符型 、 复数型 和 原始型 。整 型和双精度型向量又统称为 数值型 向量。  
 **列表** ：又称为递归向量，因为列表中也可以包含其他列表。
-```{r echo=FALSE, fig.cap="原子向量与列表", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_15.png")
-```
+![](R数据科学笔记_insertimage_15.png)
+
 向量的关键属性：  
 ```{r}
 # 类型
@@ -1976,9 +1949,7 @@ NA_character_ # 字符型
 隐式强制转换：当在特殊的上下文环境中使用向量，而这个环境又要求使用特定类型的 向量时，就会发生隐式强制转换。  
     
 **检验函数**  
-```{r echo=FALSE, fig.cap="不同检验函数", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_16.png")
-```
+![](R数据科学笔记_insertimage_16.png)
 
 **向量子集**  
 使用正整数取子集时，可以保持相应位置的元素
@@ -2026,14 +1997,11 @@ str(z)
 x1 <- list(c(1, 2), c(3, 4))  
 x2 <- list(list(1, 2), list(3, 4))   
 x3 <- list(1, list(2, list(3)))
-```{r echo=FALSE, fig.cap="列表可视化示例", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_17.png")
-```
+![](R数据科学笔记_insertimage_17.png)
 
 **列表取子集**  
-```{r echo=FALSE, fig.cap="列表子集方法", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_18.png")
-```
+![](R数据科学笔记_insertimage_18.png)
+
 使用[提取子列表，得出列表  
 ```{r}
 a <- list(a = 1:3, b = "a string", c = pi , d = list(-1, -5)) #导入数据
@@ -2191,9 +2159,7 @@ str(safe_log("a"))
 
 **多参数映射**  
 使用 map2() 函数，它可以对两个向量进行同步迭代
-```{r echo=FALSE, fig.cap="map2示例", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_19.png")
-```
+![](R数据科学笔记_insertimage_19.png)
 
 ```{r}
 mu <- list(5, 10, -3)
@@ -2201,9 +2167,7 @@ sigma <- list(1, 5, 10)
 map2(mu, sigma, rnorm, n = 5) %>% str()
 ```
 pmap() 函数可以将一个列表作为参数
-```{r echo=FALSE, fig.cap="pmap示例", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_20.png")
-```
+![](R数据科学笔记_insertimage_20.png)
 
 
 
@@ -2219,9 +2183,7 @@ args1 %>%
 
 invoke_map() 应对函数的参数不同，甚至函数本身也是不同
 
-```{r echo=FALSE, fig.cap="invoke map示例", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_21.png")
-```
+![](R数据科学笔记_insertimage_21.png)
 
 ```{r}
 f <- c("runif", "rnorm", "rpois")
@@ -2736,32 +2698,22 @@ tibble(x = 1:2, y = list(1:4, 1)) %>% unnest(y)
 # R Markdown
 
 Rmarkdonw建立,点击file-new-R markdown
-```{r echo=FALSE, fig.cap="新建Rmarkdown", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_22.png")
+![](R数据科学笔记_insertimage_22.png)
 ```
 
 打开一个 .Rmd 文件后，就会进入笔记本界面，其中代码和代码结果可以交互显示。通过点击Run图标（位于代码段上方，类似播放按钮）或按组合键 Ctrl+Shift+Enter， 就可以运行每个代码段。
-```{r echo=FALSE, fig.cap="Rmarkdown界面", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_23.png")
-```
+![](R数据科学笔记_insertimage_23.png)
+
 如果想要生成包含所有文本、代码和输出的完整报告， 可以点击 Knit 或按组合键 Ctrl+Shift+K。 还可以使用代码rmarkdown::render("1-example.Rmd") 在程序中完成这个操作。
-```{r echo=FALSE, fig.cap="Rmarkdown运行", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_24.png")
-```
+![](R数据科学笔记_insertimage_24.png)
 
 
-```{r echo=FALSE, fig.cap="markdown基本语法1", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_25.png")
-```
+![](R数据科学笔记_insertimage_25.png)
 
-```{r echo=FALSE, fig.cap="markdown基本语法2", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_26.png")
-```
+![](R数据科学笔记_insertimage_26.png)
 
 
-```{r echo=FALSE, fig.cap="代码块输出选项", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_27.png")
-```
+![](R数据科学笔记_insertimage_27.png)
 
 ## 表格
 
@@ -2810,9 +2762,7 @@ rmarkdown::render(
 
 
 RStudio 中的 knit 按钮可以按照output域中列出的第一种格式来输出文件。点击knit按钮旁的下拉菜单，也可以生成其他相应格式的输出。
-```{r echo=FALSE, fig.cap="输出选项", warning=TRUE}
-knitr::include_graphics("R数据科学笔记_insertimage_29.png")
-```
+![](R数据科学笔记_insertimage_28.png)
 
 Rmarkdowm可以导出的文档格式
 
