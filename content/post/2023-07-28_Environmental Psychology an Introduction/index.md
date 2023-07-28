@@ -28,4 +28,5 @@ categories:
 
 > [!info] Bibliography
 Steg, L., & Groot, J. I. M. de. (2019). _Environmental Psychology: An Introduction 2nd Edition_. Wiley-Blackwell.
+
 # Environmental Psychology: History, Scope, and Methods 
