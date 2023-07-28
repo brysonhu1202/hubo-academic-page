@@ -22,7 +22,7 @@ knitr::opts_chunk$set(out.width= "55%")
 knitr::opts_chunk$set(fig.align='center') 
 ```
 
-\newpage
+ 
 
 # 基本操作
 
@@ -64,7 +64,7 @@ library(installr)
 
 ![用installr包为RGui增加的更新菜单](R%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0_insertimage_29.png)
 
-\newpage
+ 
 
 # 数据结构
 
@@ -149,7 +149,7 @@ f <- list(title = f1, ages = f2, f3, f4) #组合多个对象并保存为列表
 f
 ```
 
-\newpage
+ 
 
 # 创建数据集
 
@@ -181,7 +181,7 @@ d1$gender <- factor(d1$gender,
                     labels = c("male","famale")) 
 ```
 
-\newpage
+ 
 
 # 图形初阶
 
@@ -256,7 +256,7 @@ hist(disp)
 detach(mtcars)
 ```
 
-\newpage
+ 
 
 #数据管理
 
@@ -414,7 +414,7 @@ mysample <- data_merge_2[sample(1:nrow(data_merge_2), 3, replace=FALSE), ]
 mysample
 ```
 
-\newpage
+ 
 
 # 高级数据管理
 
@@ -554,7 +554,7 @@ mydate <- function(type="long") {  #定义函数名称
 mydate("short")
 ```
 
-\newpage
+ 
 
 # 基本图形
 
@@ -745,7 +745,7 @@ dotchart(x$mpg,
          xlab = "Miles Per Gallon")
 ```
 
-\newpage
+ 
 
 # 基本统计分析
 
@@ -882,7 +882,7 @@ states <- data.frame(state.region, state.x77)
 kruskal.test(Illiteracy~state.region, data=states)
 ```
 
-\newpage
+ 
 
 # 回归分析
 
@@ -958,7 +958,7 @@ plot(effect("hp:wt", fit, , list(wt=c(2.2,3.2,4.2))), multiline=TRUE)
 #展示交互结果
 ```
 
-\newpage
+ 
 
 # 方差分析
 
@@ -1139,7 +1139,7 @@ contrasts(cholesterol$trt)
 #的一个对照，其余以此类推。
 ```
 
-\newpage
+ 
 
 # 功效分析
 
@@ -1147,7 +1147,7 @@ contrasts(cholesterol$trt)
 
 ![pwr包中常用函数](R%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0_insertimage_10.png)
 
-\newpage
+ 
 
 ## t检验的功效分析
 
@@ -1216,7 +1216,7 @@ pwr.chisq.test(w=.1853, df=3 , sig.level=.05, power=.9)
 
 ![其他常见的功效计算](R%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0_insertimage_12.png)
 
-\newpage
+ 
 
 # 中级绘图
 
@@ -1375,7 +1375,7 @@ library(vcd)
 mosaic(Titanic, shade=TRUE, legend=TRUE)
 ```
 
-\newpage
+ 
 
 # 广义线形模型
 
@@ -1426,7 +1426,7 @@ exp(coef(fit))
 # sumY与Age正相关，Trt负相关
 ```
 
-\newpage
+ 
 
 # 主成分分析与因子分析
 
@@ -1443,7 +1443,7 @@ knitr::include_graphics("R语言实战笔记_insertimage_20.png")
 knitr::include_graphics("R语言实战笔记_insertimage_21.png")
 ```
 
-\newpage
+ 
 
 ## 主成分分析
 
@@ -1497,7 +1497,7 @@ round(unclass(rc$weights), 2)
 PC1=0.28 \* height + 0.30 \* arm.span + 0.30 \* forearm + 0.29 \* lower.leg - 0.06 \* weight - 0.08 \* bitro.diameter - 0.10 \* chest.girth - 0.04 \* chest.width\
 PC2= -0.05 \* height - 0.08 \* arm.span - 0.09 \* forearm - 0.06 \* lower.leg + 0.33 \* weight + 0.32 \* bitro.diameter + 0.34\* chest.girth + 0.27 \* chest.width
 
-\newpage
+ 
 
 ## 探索性因子分析
 
@@ -1544,7 +1544,7 @@ fa.diagram(fa.varimax, simple=FALSE)
 fa.varimax$weights
 ```
 
-\newpage
+ 
 
 # 时间序列分析
 
@@ -1568,7 +1568,7 @@ tsales.subset <- window(tsales, start=c(2003, 5), end=c(2004, 6)) #提取子集
 tsales.subset
 ```
 
-\newpage
+ 
 
 ## 时序平滑化
 
@@ -1717,7 +1717,7 @@ forecast(fit, 3)
 accuracy(fit)
 ```
 
-\newpage
+ 
 
 # 聚类分析
 
@@ -1876,7 +1876,7 @@ plot(nc$All.index[,4], type="o", ylab="CCC",
 
 ```
 
-\newpage
+ 
 
 # 分类（有监督机器学习）
 
@@ -2058,7 +2058,7 @@ performance(forest.perf)
 performance(svm.perf)
 ```
 
-\newpage
+ 
 
 # 处理缺失数据
 
@@ -2149,7 +2149,7 @@ imp # 查看多重插补具体内容
 knitr::include_graphics("R语言实战笔记_insertimage_24.png")
 ```
 
-\newpage
+ 
 
 # ggplot2进行高级绘图
 
@@ -2161,7 +2161,7 @@ knitr::include_graphics("R语言实战笔记_insertimage_25.png")
 knitr::include_graphics("R语言实战笔记_insertimage_26.png")
 ```
 
-\newpage
+ 
 
 ## 分组
 
@@ -2207,7 +2207,7 @@ p3 <- ggplot(Salaries, aes(x=rank, fill="red")) + geom_bar()
 (p1 | p2) / (p3 | plot_spacer())
 ```
 
-\newpage
+ 
 
 ## 刻面
 
@@ -2234,7 +2234,7 @@ ggplot(data=singer, aes(x=height, fill=voice.part)) +
   facet_grid(voice.part~.)
 ```
 
-\newpage
+ 
 
 ## 添加光滑曲线
 
@@ -2258,7 +2258,7 @@ ggplot(data=Salaries, aes(x=yrs.since.phd, y=salary,
   geom_point(size=2)
 ```
 
-\newpage
+ 
 
 ## 修改ggplot2图形的外观
 
@@ -2358,7 +2358,7 @@ ggplot(data=mtcars, aes(x=mpg)) + geom_histogram()
 ggsave(file="mygraph.png",plot=myplot, width=5, height=4 )
 ```
 
-\newpage
+ 
 
 # 编写有效的代码
 
@@ -2441,7 +2441,7 @@ system.time(  #并行执行时间
 )
 ```
 
-\newpage
+ 
 
 # 调试
 
