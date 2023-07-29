@@ -2,7 +2,7 @@
 title: Environmental Psychology an Introduction
 subtitle: Note of Environmental Psychology an Introduction
 authors:
-  - admin
+  - admin
 tags: [环境社会学]
 categories: [Environmental Psychology]
 date: '2023-07-28T00:00:00Z'
