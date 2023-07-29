@@ -1,6 +1,7 @@
 ---
 title: Environmental Psychology an Introduction
 subtitle: Note of Environmental Psychology an Introduction
+summary:  Note of Environmental Psychology an Introduction
 authors:
   - admin
 tags: [环境社会学]
