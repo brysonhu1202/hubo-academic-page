@@ -3,7 +3,7 @@ title: 环境社会学
 subtitle: 环境社会学笔记，洪大用著
 summary:  环境社会学笔记，洪大用著，更新完毕
 authors:
-  - admin
+  - admin
 tags: [环境社会学]
 categories: [Environmental Psychology]
 date: '2023-07-28T00:00:00Z'
