@@ -1,12 +1,12 @@
 ---
 title: "Can Media Literacy Interventions Improve Fake News Discernment? A Meta-Analysis"
 authors:
-- Chang Lu
-- admin
-- Meng-Meng Bao
-- Chi Wang
-- Chao Bi
-- Xing-Da Ju
+  - Chang Lu
+  - admin
+  - Meng-Meng Bao
+  - Chi Wang
+  - Chao Bi
+  - Xing-Da Ju
 
 date: "2023-05-14T00:00:00Z"
 doi: https://dx.doi.org/10.2139/ssrn.4377372
@@ -44,11 +44,10 @@ url_pdf: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
 url_code: 'https://osf.io/a3fch/'
 url_dataset: 'https://osf.io/a3fch/'
 
+---
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
-  focal_point: ""
-  preview_only: false
+{{% callout note %}}
+Know more about the article by visit https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372 .
+{{% /callout %}}
+
 
