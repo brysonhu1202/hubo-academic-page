@@ -1,20 +1,30 @@
 ---
+
 title: Environmental Psychology an Introduction
+
 subtitle: Note of Environmental Psychology an Introduction
-summary:  Note of Environmental Psychology an Introduction
+
 authors:
-  - admin
+
+  - admin
+
 tags: [环境社会学]
+
 categories: [Environmental Psychology]
+
 date: '2023-07-28T00:00:00Z'
+
 lastMod: '2023-07-28T00:00:00Z'
+
 image:
-  caption: ''
-  focal_point: ''
+
+  caption: ''
+
+  focal_point: ''
+
 ---
 
-![](Environmental Psychology an Introduction_image_1.png)
-
+![](Environmental_Psychology_an_Introduction_image_1.png)
 
 > [!info] Bibliography
 Steg, L., & Groot, J. I. M. de. (2019). _Environmental Psychology: An Introduction 2nd Edition_. Wiley-Blackwell.
@@ -88,7 +98,7 @@ Internal validity reflects the extent to which cause–effect relationships can 
 
 ## MAIN RESEARCH METHODS IN ENVIRONMENTAL PSYCHOLOGY
 
-![[Environmental Psychology an Introduction_image_2.png]]
+![](Environmental_Psychology_an_Introduction_image_2.png)
 
 
 # PART1 Environmental Influences on Human Behaviour and  Well‐Being
@@ -203,8 +213,9 @@ These can be **prospective** (e.g. fear arising from the anticipation of harm) o
 情绪既会影响风险感知也是风险感知的反应。
 
  The emotional profiles of the risks.
-![[Environmental Psychology an Introduction_image_3.png]]
+![](Environmental_Psychology_an_Introduction_image_3.png)
 
 # Climate Change as a Unique Environmental Problem 
 
 ## PUBLIC UNDERSTANDING OF CLIMATE CHANGE
+
