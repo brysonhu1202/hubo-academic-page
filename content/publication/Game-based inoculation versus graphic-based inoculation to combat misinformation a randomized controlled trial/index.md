@@ -14,7 +14,7 @@ date: "2023-07-31T00:00:00Z"
 doi: "https://doi.org/10.1186/s41235-023-00505-x"
 featured: false
 publication: '*Cognitive Research: Principles and Implications*
-, 31 July 2023'
+, 8, 49 (2023). https://doi.org/10.1186/s41235-023-00505-x'
 publication_short: ""
 publication_types:
 - "2"
