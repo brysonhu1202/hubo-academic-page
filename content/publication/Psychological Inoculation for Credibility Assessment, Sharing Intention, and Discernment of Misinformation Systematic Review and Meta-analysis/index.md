@@ -20,8 +20,7 @@ authors:
 date: "2023-08-10T00:00:00Z"
 doi: "http://dx.doi.org/10.2196/49255"
 featured: false
-publication: '*Journal of Medical Internet Research*
-, 10 August 2023'
+publication: '*Journal of Medical Internet Research*'
 publication_types:
 - "2"
 publishDate: "2023-08-10T00:00:00Z"
