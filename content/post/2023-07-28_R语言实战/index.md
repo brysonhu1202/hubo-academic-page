@@ -1,7 +1,7 @@
 ---
 title: R语言实战第二版
 subtitle: R语言实战第二版笔记
-summary:  R语言实战第二版笔记
+summary:  R语言实战第二版笔记 更新完毕
 authors:
   - admin
 tags: 

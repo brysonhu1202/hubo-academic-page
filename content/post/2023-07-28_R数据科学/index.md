@@ -1,7 +1,7 @@
 ---
 title: R数据科学
 subtitle: R数据科学笔记
-summary:  R数据科学笔记
+summary:  R数据科学笔记 更新完毕
 authors:
   - admin
 tags: 
