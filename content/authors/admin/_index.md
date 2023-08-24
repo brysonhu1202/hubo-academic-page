@@ -78,5 +78,5 @@ email: ''
 highlight_name: true
 ---
 
-Bo Hu received his Master's degree in Applied Psychology from Northeast Normal University, where his research focused on the problem of misinformation on the Internet and online intervention facilitation (based on inoculation theory). Now, he focuses on climate change issues in China, specifically, the current status of Chinese citizens' low-carbon lifestyles (based on online questionnaires, experiments, and social media data) and intervention facilitation (nudge), from which he explores the mechanisms of intervention (cognitive modeling).
+Bo Hu obtained a Master's degree in Applied Psychology from Northeast Normal University. His research was primarily centered around the issue of misinformation on the internet and how online interventions, based on inoculation theory, can help address this problem. Currently, his research has shifted towards the examination of climate change issues in China. More specifically, his focus is on assessing the current state of low-carbon lifestyles among Chinese citizens through online questionnaires, experiments, and analysis of social media data. Additionally, he also investigates the effectiveness of intervention strategies, such as nudges, in promoting sustainable behavior.
 {style="text-align: justify;"}
