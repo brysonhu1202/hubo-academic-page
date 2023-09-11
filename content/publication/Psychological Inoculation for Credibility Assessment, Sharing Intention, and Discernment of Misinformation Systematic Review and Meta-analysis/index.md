@@ -17,13 +17,13 @@ authors:
 - Xing-Da Ju
 
 
-date: "2023-08-10T00:00:00Z"
+date: "2023-08-29T00:00:00Z"
 doi: "http://dx.doi.org/10.2196/49255"
 featured: false
 publication: '*Journal of Medical Internet Research*'
 publication_types:
 - "2"
-publishDate: "2023-08-10T00:00:00Z"
+publishDate: "2023-08-29T00:00:00Z"
 summary: "This study demonstrates that psychological inoculation is an effective approach against misinformation. It effectively strengthens individuals' discernment abilities, enabling them to distinguish between genuine and false information. Furthermore, when applied to health misinformation, psychological inoculation shows promise in diminishing the credibility assessment and sharing the intention of health-related falsehoods, contributing to safeguarding public health. These findings have profound implications for public health and digital well-being. Psychological inoculation can be easily scaled to a broader population at a lower cost, institutions can apply it to mitigate potential misinformation crises [7]. Incorporating psychological inoculation strategies into public health initiatives and educational programs can empower individuals to make well-informed decisions in an era characterized by information proliferation. Cultivating a discerning and well-informed public is crucial to buildi"
 tags:
 - Misinformation
