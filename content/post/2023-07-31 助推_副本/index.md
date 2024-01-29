@@ -10,7 +10,7 @@ tags:
   - Intervention
 categories: [Environmental Psychology]
 date: '2023-07-31T00:00:00Z'
-lastMod: '2023-08-01T22:38:00Z'
+lastMod: '2024-01-29T22:38:00Z'
 image:
   caption: ''
   focal_point: ''
