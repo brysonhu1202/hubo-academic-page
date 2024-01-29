@@ -4,10 +4,11 @@ subtitle: Daniel Lakens
 summary:  助推笔记
 authors:
   - admin
-tags: [数据科学]
+tags:
+  - 数据科学
 categories: [Data Analysis]
 date: '2023-12-17T00:00:00Z'
-lastMod: '2023-07-29T00:00:00Z'
+lastMod: '2024-01-29T00:00:00Z'
 image:
   caption: ''
   focal_point: ''
