@@ -47,7 +47,10 @@ From the data that we have, we can calculate means, standard deviations, and we
 p值是你观察到的数据的概率，不是一个理论的概率
 
 p值不是支持虚无假设为真的真实概率
-$P\left(D^* \mid H\right) \neq P(H \mid D)$（D= data, H = hypothesis）
+$$
+P\left(D^* \mid H\right) \neq P(H \mid D)
+$$
+（D= data, H = hypothesis）
 左边：the probability of the data assuming the null hypothesis is true. 假设零假设为真的数据概率。
 右边：the probability of an hypothesis given some data that you have observed. 在观察到一些数据的情况下，假设成立的概率。
 
