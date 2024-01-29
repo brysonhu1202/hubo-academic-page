@@ -15,6 +15,7 @@ image:
   focal_point: ''
 ---
 
+
 # Introduction + Frequentist Statistics
 
 Statistical inference is a process where you use data from a sample to describe properties of the distribution of data in the population. When you test a hypothesis, calculate a confidence interval, or estimate an effect size, you are making statistical inferences.
@@ -38,9 +39,10 @@ From the data that we have, we can calculate means, standard deviations, and we
 通过均值、标准差以及样本量来计算分布差异（通常使用正态分布）
 
 如果零假设为真，就有95%的资料属于蓝色区域，如果资料算出的统计值在两个临界值之内，就没有效果
-![[Improving your statistical inferences 1_image_1.png]]
+
+![](Improving%20your%20statistical%20inferences_image_1.png)
 如果资料落入量表，代表有效果
-![[Improving your statistical inferences 1_image_2.png]]
+![](Improving your statistical inferences_image_2.png)
 
 p值是你观察到的数据的概率，不是一个理论的概率
 
@@ -72,24 +74,24 @@ H0：虚无假设 H1：备择假设
 β是指我们接受H1为真时候结果不显著的的犯错几率（II类错误。应该显著），
 1-β便指结果显著同时H1为真的可能性（统计检验力）。
 
-![[Improving your statistical inferences 1_image_3.png]]
+![](Improving your statistical inferences_image_3.png)
 
 
 假设研究：H0与H1的概率都为50%，α=5%，1-β=80%。
 真阴性的可能性最大
 
-![[Improving your statistical inferences 1_image_4.png]]
+![](Improving your statistical inferences_image_4.png)
 
 提高统计检验力来增加真阳性概率：H0与H1的概率都为50%，α=5%，1-β=99%。
 真阳性的可能性最大
-![[Improving your statistical inferences 1_image_5.png]]
+![](Improving your statistical inferences_image_5.png)
 
 另一个思路，改变假设先验：H0与H1的概率为10%与90%，α=5%，1-β=80%。
 真阳性的可能性最大。
-![[Improving your statistical inferences 1_image_6.png]]
+![](Improving your statistical inferences_image_6.png)
 
 结果的可视化
-![[Improving your statistical inferences 1_image_7.png]]
+![](Improving your statistical inferences_image_7.png)
 
 # Likelihoods & Bayesian Statistics
 
@@ -103,15 +105,15 @@ $L(\theta)=\frac{n !}{x !(n-x) !} \times \theta^x \times(1-\theta)^{n-x}$
 
 投八次硬币十次朝上，$\theta$ =0.8 的 L=0.30，通过函数可以发现$\theta$ =0.8似然比最大
 
-![[Improving your statistical inferences 1_image_8.png]]
+![](Improving your statistical inferences_image_8.png)
 
 likehood ratio 似然比：虚无假设成立对比备择假设成立的比例（相对证据强度）。最大似比中的8和32为中等强度与大强度的临界值。
 
 例：虚无假设（$\theta$ =0.5 ）对比备择假设（$\theta$ =0.8）。将0.8的似然值除以0.5的似然值（6.87），得出（$\theta$ =0.8）的可能性是（$\theta$ =0.5）的六倍
-![[Improving your statistical inferences 1_image_9.png]]
+![](Improving your statistical inferences_image_9.png)
 错误现象，虽然最大似然比很大，但是两个假设都是错误的
 
-![[Improving your statistical inferences 1_image_10.png]]
+![](Improving your statistical inferences_image_10.png)
 例：当三次实验，两次实验显著（α=.05）
 H0为真的似然值 = 0.05 x 0.05 x 0.95 = 0.0024
 H1为真的似然值 = 0.8 x 0.8 x 0.2 = 0.128 （power =0.8）
@@ -120,10 +122,10 @@ H1 is 54 times more likely than H0
 ```
 图是怎么形成的？按我的理解，这是2/3的似然值图，最开始的事8/10的似然值图
 ```
-![[Improving your statistical inferences 1_image_11.png]]
+![](Improving your statistical inferences_image_11.png)
 
 不同情况下的似然值图
-![[Improving your statistical inferences 1_image_12.png]]```
+![](Improving your statistical inferences_image_12.png)```
 ```
 绘制似然曲线代码
 #plot likelihood curve----
@@ -165,7 +167,7 @@ $P\left(D_{(o r>D)} \mid H 0\right)$
 我们想要的是根据手上资料，虚无假设存在的程度，即后验概率
 $\mathrm{P}(\mathrm{H0} \mid \mathrm{D})$
 
-后验概率是指根据手上资料，加上已存在研究者脑中的信念，能不能活动虚无假设或备择假设为真的几率。也就是先验乘以似然比的乘积[[Improving your statistical inferences#Likelihoods|Likelihoods]]
+后验概率是指根据手上资料，加上已存在研究者脑中的信念，能不能活动虚无假设或备择假设为真的几率。也就是先验乘以似然比的乘积[[Improving your statistical inferences#Likelihoods|Likelihoods)
 $Prior Belief + Data = Posterior Belief$
 
 $\frac{P(\mathrm{H} 1 \mid \mathrm{D})}{P(\mathrm{H} 0 \mid \mathrm{D})}=\frac{P(\mathrm{D} \mid \mathrm{H} 1)}{P(\mathrm{D} \mid \mathrm{H} 0)} \times \frac{P(\mathrm{H} 1)}{P(\mathrm{H} 0)}$
@@ -178,9 +180,9 @@ $f(x ; \alpha, \beta)=\frac{1}{B(\alpha, \beta)} x^{\alpha-1}(1-x)^{\beta-1}$
 
 例：α=1和β=1，范围内任一$\theta$的几率相同，任何结果都可能发生（设定这种先验等于没有先验）
 
-![[Improving your statistical inferences 1_image_13.png]]
+![](Improving your statistical inferences_image_13.png)
 
-![[Improving your statistical inferences 1_image_14.png]]
+![](Improving your statistical inferences_image_14.png)
 后验是一个新的beta分布
 
 𝛼* = 𝛼prior + 𝛼likelihood – 1
@@ -189,13 +191,13 @@ $f(x ; \alpha, \beta)=\frac{1}{B(\alpha, \beta)} x^{\alpha-1}(1-x)^{\beta-1}$
 
 数据结果（蓝色虚线）
 后验（黑线）= 数据结果（蓝色虚线，似然性函数） x 先验（灰线）
-![[Improving your statistical inferences 1_image_15.png]]
+![](Improving your statistical inferences_image_15.png)
 
 The Bayes factor is the relative evidence for one model compared to another model.
 贝叶斯因子是手上证据支持两种模型的相对程度
 
-![[Improving your statistical inferences 1_image_16.png]]
-![[Improving your statistical inferences 1_image_17.png]]
+![](Improving your statistical inferences_image_16.png)
+![](Improving your statistical inferences_image_17.png)
 ```
 计算贝叶斯因子代码
 H0<-0.5 #Set the point null hypothesis you want to calculate the Bayes Factor for
@@ -226,14 +228,14 @@ title(paste('Bayes Factor:',round(BF10,digits=2)))
 
 ## Bayesian Thinking
 
-![[Improving your statistical inferences 1_image_18.png]]
+![](Improving your statistical inferences_image_18.png)
 
 结合了p Value与先验的双线图
 
-![[Improving your statistical inferences 1_image_19.png]]
+![](Improving your statistical inferences_image_19.png)
 例：虚无假设为真的事前概率为50%，收集资料得到刚好显著的p Value（0.05），会得到币先验更低估的事后概率
-![[Improving your statistical inferences 1_image_20.png]]
-![[Improving your statistical inferences 1_image_21.png]]
+![](Improving your statistical inferences_image_20.png)
+![](Improving your statistical inferences_image_21.png)
 
 # Multiple Comparisons, Statistical Power, Pre-Registration
 
@@ -246,7 +248,7 @@ I型错误增加的一个主要问题是进行多重比较，从而导致犯下�
 In a 2x2x2 ANOVA, there are 7 tests. Type 1 error rate: 1-(0.95)$^7$=30%
 
 比较次数与I类错误之间的关系
-![[Improving your statistical inferences 1_image_22.png]]
+![](Improving your statistical inferences_image_22.png)
 比较常见的校正方式（Bonferroni Correction, or Dunn Correction）
 
 $\frac{\alpha}{\text { number of tests }}$ 或( $p \times$ number of tests)
@@ -257,8 +259,8 @@ Optional stopping: Collecting data until p < 0.05 inflates the Type 1 error.
 
 序列分析（Sequential analysis）可以控制补充研究增加I类错误的风险
 
-![[Improving your statistical inferences 1_image_23.png]]
-![[Improving your statistical inferences 1_image_24.png]]
+![](0_files/Improving your statistical inferences_image_23.png)
+![](Improving your statistical inferences_image_22.png)
 ## Type 2 error control
 
 I型错误，虚无假设为假但是结果显著的情况
@@ -266,9 +268,9 @@ I型错误，虚无假设为假但是结果显著的情况
 不同效应量发现显著性结果的相对检验力
 With n = 100, you had 95% power to observe a d=0.5
 
-![[Improving your statistical inferences 1_image_25.png]]
+![](Improving your statistical inferences_image_23.png)
 
-![[Improving your statistical inferences 1_image_26.png]]
+![](Improving your statistical inferences_image_24.png)
 
 I类错误 可以被纠正，II类错误可能会更严重
 
@@ -295,23 +297,23 @@ I类错误 可以被纠正，II类错误可能会更严重
 - 效应量可以帮助作者实现元分析方法的结论
 - 效应量可以允许研究者去呈现统计检验力分析
 
-![[Improving your statistical inferences 1_image_27.png]]
+![](Improving your statistical inferences_image_25.png)
 
 效应量分为标准化效应量与非标准化效应量，非标准化效应量没有单位。
 
 结果显著但是效应量很小，实际意义也会很小。但是也要强调小效应对大群体的重要性。
-![[Improving your statistical inferences 1_image_28.png]]
+![](Improving your statistical inferences_image_26.png)
 效应量的分类：
 - d family 标准化的均值差异
 - r family 变量见的关联强度
 
-![[Improving your statistical inferences 1_image_29.png]]
+![](Improving your statistical inferences_image_27.png)
 ## Cohen's d
 
 Cohen's d is the difference divided by the standard deviation
 
 被试间d相比被试内d需要考虑变量间的相关性
-![[Improving your statistical inferences 1_image_30.png]]
+![](Improving your statistical inferences_image_28.png)
 
 通过平均值和标准差，可以计算效应量。
 
@@ -319,7 +321,7 @@ Cohen d 是 0 到无穷的数值
 
 Cohen d的可视化，即使是大效应，也有重叠的部分。
 
-![[Improving your statistical inferences 1_image_31.png]]
+![](Improving your statistical inferences_image_29.png)
 
 Hedges' g is a unbiased version of Cohen's d
 
@@ -344,7 +346,7 @@ $\omega^2, \varepsilon^2$ 是真实效应量的无偏估计（是接近无偏）
 
 这些都表示变量x与y的关系需要多高，才能减除数据中的误差
 
-![[Improving your statistical inferences 1_image_32.png]]
+![](Improving your statistical inferences_image_30.png)
 左边代表总平方和$S S_{tot}$，右边代表残差平方和$S S_{res}$
 $R^2=\frac{S S_{\text {res }}}{S S_{\text {tot }}}$
 
@@ -355,7 +357,7 @@ Cohen (1988) has provided benchmarks to define small ( f = 0.10), medium (f = 0.
 To translate: Cohen (1988) has provided benchmarks to define small ( $\eta^2$= 0.0099), medium ( $\eta^2$= 0.0588), and large ( $\eta^2$= 0.1379) effects.
 
 $f=\sqrt{\frac{\eta^2}{1-\eta^2}}$
-![[Improving your statistical inferences 1_image_33.png]]
+![](Improving your statistical inferences_image_31.png)
 
 # Confidence Intervals, Sample Size Justification, p-Curve analysis
 
@@ -369,19 +371,19 @@ Confidence intervals are a statement about the percentage of confidence interval
 
 一项均值为0的研究，95%的置信区间都包括这个结果，黑线代表的为另外5%
 
-![[Improving your statistical inferences 1_image_34.png]]
+![](Improving your statistical inferences_image_32.png)
 
 数据分析通常通过样本Sample预测总体Population，会存在不确定性
 
 例：一个计算好的相关系数，其中的蓝色区域代表不确定性（95%置信区间）
 
-![[Improving your statistical inferences 1_image_35.png]]
+![](Improving your statistical inferences_image_33.png)
 对于正态分布，95%置信区间为：
 $\mathrm{M} \pm 1.96 \times \mathrm{SE}$
 Standard Error $(\mathrm{SE})=\mathrm{SD} / \sqrt{ } \mathrm{N}$
 
 随着样本量的增加，置信区间越短
-![[Improving your statistical inferences 1_image_36.png]]
+![](Improving your statistical inferences_image_34.png)
 置信区间与p直接相关，如果95%置信区间包含0，那么p一定<.05
 
 Highest density intervals (credible interval)
@@ -394,18 +396,15 @@ A 95% credible interval contains the values you find most plausible.
 
 小样本存在较大的变异，以及更多的II类错误，即更多的不准确评估
 
-![[Improving your statistical inferences 1_image_37.png]]
+![](Improving your statistical inferences_image_35.png)
 
 方法1：根据置信区间的宽度决定样本量
 
-![[Improving your statistical inferences 1_image_38.png]]
+![](Improving your statistical inferences_image_36.png)
 
 方法2：根据指定的统计检验力
 
-![[Improving your statistical inferences 1_image_39.png]]
-使用统计检验力最好使用非偏效应量(Hedges' g, $\varepsilon, \omega)$
-
-如果效应量不确定，使用序列分析是一种不错的方法
+![](Improving your statistical inferences_image_37.png)果效应量不确定，使用序列分析是一种不错的方法
 
 贝叶斯统计不需要关系需要收集的样本数，收集到你认为结果适当时就好
 
@@ -415,7 +414,7 @@ P curve 可以评估文件抽屉效应，即使分析的只有p<.05的值
 
 用于回答真实效果与没有真实效果的p值分布看起来会不会不一样
 绿线是有效果的p curve 蓝线是无效果的 p curve
-![[Improving your statistical inferences 1_image_40.png]]
+![](Improving your statistical inferences_image_38.png)
 
 当 p curve 接近无效时，暗示数据无法支持研究者的假设
 
@@ -424,11 +423,11 @@ P curve 可以评估文件抽屉效应，即使分析的只有p<.05的值
 ## Philosophy of Science
 
 做有效推论的一种逻辑方法：否定条件 Modus Tollens， 即可证伪性
-![[Improving your statistical inferences 1_image_41.png]]
-![[Improving your statistical inferences 1_image_42.png]]
+![](Improving your statistical inferences_image_39.png)
+![](Improving your statistical inferences_image_40.png)
 
 理论的内核与缓冲带，缓冲带可以部分调整，但是要保留内核
-![[Improving your statistical inferences 1_image_43.png]]
+![](Improving your statistical inferences_image_41.png)
 
 ## The Null is Always False
 
@@ -448,7 +447,7 @@ Strong Inference: Crucial experiments that exclude one alternative hypothesis。
 ## Theory Construction
 
 理论与统计假设与数据的关系
-![[Improving your statistical inferences 1_image_44.png]]
+![](Improving your statistical inferences_image_42.png)
 
 如何建构理论：
 - 思想实验：如果我自己在这个理论中，我会怎么做，会符合理论吗？
@@ -474,7 +473,7 @@ Strong Inference: Crucial experiments that exclude one alternative hypothesis。
 目标4：验证潜在假设
 
 潜在的不可复制研究：低的统计检验力，高的p value，令人惊讶的结果
-![[Improving your statistical inferences 1_image_45.png]]
+![](Improving your statistical inferences_image_43.png)
 
 ## Publication Bias
 
@@ -482,7 +481,7 @@ Strong Inference: Crucial experiments that exclude one alternative hypothesis。
 
 这也导致看到的文献几乎都支持某种假设
 
-![[Improving your statistical inferences 1_image_46.png]]
+![](Improving your statistical inferences_image_44.png)
 常见的出版偏倚校正方法：
 - 剪补法
 - 失安全系数（不推荐用，发明者承认存在计算问题）
@@ -493,18 +492,18 @@ Strong Inference: Crucial experiments that exclude one alternative hypothesis。
 开放科学包括：数据、材料、出版
 
 查询你可以如何分享你发表的论文
-![[Improving your statistical inferences 1_image_47.png]]
+![](Improving your statistical inferences_image_45.png)
 
 数据共享：
 
 最好提供分析脚本与原始数据，最好加上注释
 
-![[Improving your statistical inferences 1_image_48.png]]
+![](Improving your statistical inferences_image_46.png)
 
 储存资料的云端服务器
 
-![[Improving your statistical inferences 1_image_49.png]]
+![](Improving your statistical inferences_image_47.png)
 
 OSF平台
 
-![[Improving your statistical inferences 1_image_50.png]]
+![](Improving your statistical inferences_image_48.png)
