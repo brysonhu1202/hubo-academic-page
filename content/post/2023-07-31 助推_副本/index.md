@@ -7,7 +7,7 @@ authors:
 tags: 
   - Data Analysis
   - 统计基础
-categories: [Environmental Psychology]
+categories: [Data Analysis]
 date: '2023-07-31T00:00:00Z'
 lastMod: '2024-01-29T22:38:00Z'
 image:
