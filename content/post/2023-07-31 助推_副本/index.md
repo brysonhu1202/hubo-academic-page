@@ -1,7 +1,7 @@
 ---
-title: 助推 如何做出有关健康、财富与幸福的最佳决策
-subtitle: 助推笔记
-summary:  助推笔记
+title: Improving your statistical inferences
+subtitle: Improving your statistical inferences
+summary:  Improving your statistical inferences
 authors:
   - admin
 tags: 
