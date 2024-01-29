@@ -1,14 +1,16 @@
 ---
-title: Improving your statistical inferences
-subtitle: Daniel Lakens
+title: 助推 如何做出有关健康、财富与幸福的最佳决策
+subtitle: 助推笔记
 summary:  助推笔记
 authors:
-  - admin
-tags:
-  - 数据科学
-categories: [Data Analysis]
-date: '2023-12-17T00:00:00Z'
-lastMod: '2024-01-29T00:00:00Z'
+  - admin
+tags: 
+  - 助推（Nudge）
+  - Environmental Psychology
+  - Intervention
+categories: [Environmental Psychology]
+date: '2023-07-31T00:00:00Z'
+lastMod: '2023-08-01T22:38:00Z'
 image:
   caption: ''
   focal_point: ''
