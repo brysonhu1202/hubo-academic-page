@@ -1,130 +1,506 @@
 ---
-title: 助推 如何做出有关健康、财富与幸福的最佳决策
-subtitle: 助推笔记
-summary:  助推笔记
+title: Improving your statistical inferences
+subtitle: Improving your statistical inferences，Daniel Lakens
 authors:
-  - admin
-tags: 
-  - 助推（Nudge）
-  - Environmental Psychology
-  - Intervention
-categories: [Environmental Psychology]
-date: '2023-07-31T00:00:00Z'
-lastMod: '2023-08-01T22:38:00Z'
+  - admin
+tags: [数据科学]
+categories: [Data Analysis]
+date: '2023-12-17T00:00:00Z'
+lastMod: '2023-07-29T00:00:00Z'
 image:
   caption: ''
   focal_point: ''
 ---
+# Introduction + Frequentist Statistics
+
+Statistical inference is a process where you use data from a sample to describe properties of the distribution of data in the population. When you test a hypothesis, calculate a confidence interval, or estimate an effect size, you are making statistical inferences.
+
+三种统计检验方法
+1. Neyman-Pearson:通过显著性水平接受虚无假设还是对立假设
+2. Bayesian Statistics: 计算对假设的信念
+3. Likelihood：支持不同假设的似然性
+
+## p value
+p值是在虚无假设为真的前提下，观察值属于次分配的概率
+The formal definition of a p-value is the probability of getting the observed, or more extreme data, assuming the null hypothesis is true.
+
+解释p值
+
+当两组的均值差异为0.11时，如何解释？
+- 可能是随机的噪音
+- 可能是真实的差异
+
+From the data that we have, we can calculate means, standard deviations, and we know the sample size that we have. We can use these parameters to calculate a test statistic, and compare this test statistic against a distribution.
+通过均值、标准差以及样本量来计算分布差异（通常使用正态分布）
+
+如果零假设为真，就有95%的资料属于蓝色区域，如果资料算出的统计值在两个临界值之内，就没有效果
+![[Improving your statistical inferences 1_image_1.png]]
+如果资料落入量表，代表有效果
+![[Improving your statistical inferences 1_image_2.png]]
+
+p值是你观察到的数据的概率，不是一个理论的概率
+
+p值不是支持虚无假设为真的真实概率
+$P\left(D^* \mid H\right) \neq P(H \mid D)$（D= data, H = hypothesis）
+左边：the probability of the data assuming the null hypothesis is true. 假设零假设为真的数据概率。
+右边：the probability of an hypothesis given some data that you have observed. 在观察到一些数据的情况下，假设成立的概率。
+
+同时，p>.05不代表没有效果，你可能需要更大的样本去检测小效应，是这个问题还没有结果
+
+Using p-values correctly:
+p < alpha: Act as if data is not noise.  
+p > alpha: Remain uncertain or act as if data is noise.
+
+错误的解释p值：We found a p-value smaller than 0.05, so our theory...
+正确的解释p值：We found the p-value smaller than 0.05, so our data...
 
 
-![](助推_如何做出有关健康、财富与幸福的最佳决策_image_1.png)
+贝叶斯是能够计算理论为真的记录的方法，
 
-一个错误假设：几乎所有人在任何时候都会做出对自己最有利的选择，或者说做出至少比别人更好的选择。
-第一个错误认知：我们可以避免对人们的选择造成影响。人们的选择会受到选择设计者设计的选定因素的极大影响。
-第二个错误认知：自由主义的温和专制主义难免包含强制的因素。
+## I类错误与II类错误
 
-# 第一部分 社会人和经济人
+I类错误：你以为是其实不是，误认
+II类错误：你以为不是其实是，漏认
 
-## 第1章 偏差和谬误如何欺骗我们的眼睛？
+H0：虚无假设 H1：备择假设
 
-### 思维方式
+α是指我们接受H0为真时候结果显著的犯错几率（I类错误。不应该显著），常见设定为5%
+β是指我们接受H1为真时候结果不显著的的犯错几率（II类错误。应该显著），
+1-β便指结果显著同时H1为真的可能性（统计检验力）。
 
-两种思维方式之间的区别，一种是直觉和自动的，另外一种是思考和理性的。在本书中，我们将第一种思维方式称为“直觉思维系统”，将第二种思维方式称为“理性思维系统”（在一些心理学文献中，这两个系统有时候被分别称为“系统1”和“系统2”）。
-- 我们在写这本书时，大部分时间使用的也是理性思维系统。
-- 但是，在洗澡、谈话或走路时，我们时常也会灵机一动，想出写书的好点子，而这极有可能来自我们的直觉思维系统。
-![](助推_如何做出有关健康、财富与幸福的最佳决策_image_2.png)
-
-人们在讲母语时使用的是直觉思维系统，而在费力地讲外语时倾向于使用理性思维系统。真正意义上的双语使用者是指那些能够使用直觉思维系统讲两种语言的人。
-
-### 经验法则
-
-经验法则：我们之所以使用这一法则，是因为它在多数情况下既快速又有效。尽管经验法则有时候非常有用，但它可能会导致系统偏差。们最初的研究工作提出了三项经验法则——锚定法则、可得性法则和代表性法则，这三者之间相互联系。
-1. 锚定和判断：你会在锚定一个已知数字的基础上沿着你认为正确的方向进行调整。然而，我们之所以会出现偏差，是因为**我们做出的调整往往是不够的**。
-	- 慈善机构在请你捐款时，一般都会向你提供一系列的选择，比如100美元、250美元、5 000美元或者其他。实际上，这些慈善机构列出的数字并不是随手写的，这些数字的确会影响到人们最终捐款的金额。面对100美元、250美元、1000美元和5 000美元的选项，人们一定会比面对50美元、75美元、100美元和150美元的选项捐出更多的钱。
-2. 他们会根据相关例子的情况对发生上述风险的可能性做出判断。如果人们能够轻而易举地回忆起有关的例子，他们便会对这种风险更为在意。
-	- 人们是否会购买自然灾难保险在很大程度上取决于最近的经验。刚刚经历过大地震的人会突然购买大量的地震险，但是这一保险的购买数量会随着时间的推移而平稳下降，一如逐渐消退的记忆。
-	- 风险评估中存在的偏差可能会对我们的风险观、商业选择观和政治观产生负面影响。互联网股票表现抢眼时，人们会疯狂地购买互联网股票，尽管他们会因此被套牢。
-3. 所谓“代表性”，就是说当有人问你A属于B的可能性有多大时，你（或者说你的直觉思维系统）会首先问自己A与B有多少相似性（即A能在多大程度上“代表”B）
-	- 对于一名身高近2米的非洲裔美国人和一名身高1.7米的犹太人，我们更倾向于将前者看作一名职业篮球运动员，因为篮球运动员大多身材高大，很少有矮个子参与（特别是在近几年）。
-	- 在一项实验中，参与的实验者被告知：琳达今年31岁，未婚，性格开朗，聪明伶俐，她主修哲学专业。在学生时代，她十分关注男女不平等这一社会现象，还参加过反核能游行。然后，人们被要求按照发生的可能性对琳达未来可能会遇到的8种情况进行排序。其中两个关键选项是“银行出纳员”和“热衷于女权运动的银行出纳员”。大多数人认为，相对于“银行出纳员”，琳达更有可能是一名“热衷于女权运动的银行出纳员”
-		- 琳达是一名“银行出纳员”的可能性要高于她是一名“热衷于女权运动的银行出纳员”的可能性，因为所有“热衷于女权运动的银行出纳员”都是“银行出纳员”。
+![[Improving your statistical inferences 1_image_3.png]]
 
 
-### 过度自信
+假设研究：H0与H1的概率都为50%，α=5%，1-β=80%。
+真阴性的可能性最大
 
-“中等水平以上”的心态具有普遍性。
-- 90%的驾驶员都会认为自己的驾驶水平在一般人之上，
-- 几乎每个人（甚至包括那些很少露出微笑的人）都认为自己比普通人更具幽默感（因为他们知道什么事情好笑）。
-- 人们发现大约94%的大学教授都认为自己的水平比普通教授高。我想我们的确有足够的理由认为大学教授一般都过于自负。
+![[Improving your statistical inferences 1_image_4.png]]
 
-### 得到和失去
+提高统计检验力来增加真阳性概率：H0与H1的概率都为50%，α=5%，1-β=99%。
+真阳性的可能性最大
+![[Improving your statistical inferences 1_image_5.png]]
 
-人们憎恶失去属于自己的东西，他们的直觉思维系统对此会难以接受。大体上来讲，失去某件东西使你难过的程度比你得到这件东西使你快乐的程度要大一倍，我们将这一现象称为“**损失厌恶**”。
-- 一所大学的某个班级里有一半学生都得到了一个印有其母校校徽的咖啡杯，实验要求那些没有得到杯子的学生仔细看一看其他人刚刚得到的杯子。接着，实验又要求拿到杯子的学生将杯子卖给那些没有拿到杯子的学生。
-	- 杯子的主人愿意卖出杯子的价格大约是想买杯子的学生愿意支付的价格的两倍。
-- 是否愿意打赌掷硬币，正面向上你会赢一些钱，反面向上你将输100美元。那么这“一些钱”是多少才能使你动心呢？对大多数人来讲，答案在200美元左右。
-	- 这便意味着，赢得200美元的幸福刚好能够填补失去100美元的懊恼。
+另一个思路，改变假设先验：H0与H1的概率为10%与90%，α=5%，1-β=80%。
+真阳性的可能性最大。
+![[Improving your statistical inferences 1_image_6.png]]
 
-“损失厌恶”容易使人**产生惰性，即一种强烈的保持现状的欲望**。如果你因为不想招致损失而不愿意放弃某些事情，你便会拒绝因此发生的交易。
+结果的可视化
+![[Improving your statistical inferences 1_image_7.png]]
 
-### 现状偏差
+# Likelihoods & Bayesian Statistics
 
-人们总体上更倾向于保持现有的状况，这一现象在很多情况下都会发生。
+## Likelihoods
 
-“现状偏差”很容易被利用。多年以前，美国运通公司给桑斯坦写了一封措辞友好的信，信中告诉桑斯坦，该公司能够连续3个月免费向他赠送他选中的5本杂志。免费赠送看上去是件不错的事情，不管这些杂志有没有阅读价值，因此桑斯坦欣然选出了5本杂志。但是，令他始料未及的是，他在3个月之后每月仍然会收到杂志，并且必须照价付款，直到最终他设法取消了订阅。就这样，在大约10年的时间里，桑斯坦不得不为那些自己几乎从来不看的杂志掏腰包（他很早便想取消预订，却没有成功。我们会在下一章谈到人们的拖延行为）。
+Likelihoods are a way to express the relative evidence for one hypothesis over another hypothesis.
+
+二项式最大似然比函数：
+
+$L(\theta)=\frac{n !}{x !(n-x) !} \times \theta^x \times(1-\theta)^{n-x}$
+
+投八次硬币十次朝上，$\theta$ =0.8 的 L=0.30，通过函数可以发现$\theta$ =0.8似然比最大
+
+![[Improving your statistical inferences 1_image_8.png]]
+
+likehood ratio 似然比：虚无假设成立对比备择假设成立的比例（相对证据强度）。最大似比中的8和32为中等强度与大强度的临界值。
+
+例：虚无假设（$\theta$ =0.5 ）对比备择假设（$\theta$ =0.8）。将0.8的似然值除以0.5的似然值（6.87），得出（$\theta$ =0.8）的可能性是（$\theta$ =0.5）的六倍
+![[Improving your statistical inferences 1_image_9.png]]
+错误现象，虽然最大似然比很大，但是两个假设都是错误的
+
+![[Improving your statistical inferences 1_image_10.png]]
+例：当三次实验，两次实验显著（α=.05）
+H0为真的似然值 = 0.05 x 0.05 x 0.95 = 0.0024
+H1为真的似然值 = 0.8 x 0.8 x 0.2 = 0.128 （power =0.8）
+likehood ratio：0.128/0.0024 = 54 (strong)
+H1 is 54 times more likely than H0
 ```
-苹果等的自动续费策略真实玩的花起
+图是怎么形成的？按我的理解，这是2/3的似然值图，最开始的事8/10的似然值图
+```
+![[Improving your statistical inferences 1_image_11.png]]
+
+不同情况下的似然值图
+![[Improving your statistical inferences 1_image_12.png]]```
+```
+绘制似然曲线代码
+#plot likelihood curve----
+n<-10 #set total trials
+x<-8 #set successes
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like <- dbinom(x,n,theta) #create likelihood function
+plot(theta,like,type='l',xlab=expression(theta), ylab='Likelihood', main="Likelihood Curve")
 ```
 
-人类身上的“损失厌恶”和“选择盲目”暗示着，如果某项选择被设计为“默认”，那么它会吸引更多人的眼球。因此，默认选项便起到了强力助推的作用。在很多情况下，默认选项的助推极为强大，因为消费者会感觉（无论对错）默认选项是被默认选项设计者所认可的选择，不管这些设计者是企业老板、政府工作人员还是电视节目策划者。因此，我们在写作本书的过程中力求将默认选项设定到最好。
 
-### 更聪明的措辞
+```
+计算似然比代码
+#Calculate the likelihood ratio----
+n<-10 #set total trials
+x<-5 #set successes
+H0 <- .5 #specify one hypothesis you want to compare with the likihood ratio
+H1 <- .4 #specify another hypothesis you want to compare with the likihood ratio (you can use 1/20, or 0.05)
+dbinom(x,n,H0)/dbinom(x,n,H1) #Returns the likelihood ratio of H0 over H1
+dbinom(x,n,H1)/dbinom(x,n,H0) #Returns the likelihood ratio of H1 over H0
 
-即便是专家，他们也会受到措辞的影响。如果医生们被告知“这一手术的成功率为90%”，会比他们听到“这一手术的失败率为10%”时更愿意推荐病人做手术。
+theta<- seq(0,1,len=100) #create theta variable, from 0 to 1
+like <- dbinom(x,n,theta)
+#png(file="LikRatio.png",width=4000,height=3000, , units = "px", res = 900)
+plot(theta,like,type='l',xlab=expression(theta), ylab='Likelihood', lwd=2)
+points(H0,dbinom(x,n,H0))
+points(H1,dbinom(x,n,H1))
+segments(H0, dbinom(x,n,H0), x/n, dbinom(x,n,H0), lty=2, lwd=2)
+segments(H1, dbinom(x,n,H1), x/n, dbinom(x,n,H1), lty=2, lwd=2)
+segments(x/n, dbinom(x,n,H0), x/n, dbinom(x,n,H1), lwd=2)
+title(paste('Likelihood Ratio H0/H1:',round(dbinom(x,n,H0)/dbinom(x,n,H1),digits=2)," Likelihood Ratio H1/H0:",round(dbinom(x,n,H1)/dbinom(x,n,H0),digits=2)))
+#dev.off()
+```
 
-第一，如果你采取节能措施，你每年将节约350美元；第二，如果你不采取节能措施，你每年将浪费350美元。结果证明，第二条宣传语取得的效果远远好于第一条，原因是它是以损失为基本出发点的。如果政府要建设一个节能社会，那么第二种说法会起到一个不错的助推效果。
+## Binomial Bayesian Inference
 
-措辞之所以会有效，是因为人们在做出决策时通常会怀有一种盲目和被动的心态，他们的理性思维系统往往懒得将看到的信息变换一种说法，看看是否会得出一个不同的结论。
+p值代表以虚无假设为真的前提下，不论手上资料是否极端，其符合虚无假设的程度
+$P\left(D_{(o r>D)} \mid H 0\right)$
+我们想要的是根据手上资料，虚无假设存在的程度，即后验概率
+$\mathrm{P}(\mathrm{H0} \mid \mathrm{D})$
 
-## 第2章 如何抵制诱惑？
+后验概率是指根据手上资料，加上已存在研究者脑中的信念，能不能活动虚无假设或备择假设为真的几率。也就是先验乘以似然比的乘积[[Improving your statistical inferences#Likelihoods|Likelihoods]]
+$Prior Belief + Data = Posterior Belief$
 
-## 第3章 如何控制社会对我们的影响？
+$\frac{P(\mathrm{H} 1 \mid \mathrm{D})}{P(\mathrm{H} 0 \mid \mathrm{D})}=\frac{P(\mathrm{D} \mid \mathrm{H} 1)}{P(\mathrm{D} \mid \mathrm{H} 0)} \times \frac{P(\mathrm{H} 1)}{P(\mathrm{H} 0)}$
 
-## 第4章 我们何时需要助推？
+$Posterior = Likelihood Ratio \times Prior$
 
-## 第5章 如何优化选择体系？  
+对于先验，使用beta分布，beta分布由α和β决定（和I类II类错误中的不一样）
 
-# 第二部分 钱 
+$f(x ; \alpha, \beta)=\frac{1}{B(\alpha, \beta)} x^{\alpha-1}(1-x)^{\beta-1}$
 
-## 第6章 “明天储蓄更多”计划 
+例：α=1和β=1，范围内任一$\theta$的几率相同，任何结果都可能发生（设定这种先验等于没有先验）
 
-## 第7章 幼稚的投资
+![[Improving your statistical inferences 1_image_13.png]]
 
-## 第8章 信用市场 
+![[Improving your statistical inferences 1_image_14.png]]
+后验是一个新的beta分布
 
-## 第9章 社会保障私有化
+𝛼* = 𝛼prior + 𝛼likelihood – 1
 
-# 第三部分 医疗健康
+𝛽* = 𝛽prior + 𝛽likelihood – 1
 
-## 第10章 “处方药”
+数据结果（蓝色虚线）
+后验（黑线）= 数据结果（蓝色虚线，似然性函数） x 先验（灰线）
+![[Improving your statistical inferences 1_image_15.png]]
 
-## 第11章 如何促进器官捐献？
+The Bayes factor is the relative evidence for one model compared to another model.
+贝叶斯因子是手上证据支持两种模型的相对程度
 
-## 第12章 如何拯救我们的星球？
+![[Improving your statistical inferences 1_image_16.png]]
+![[Improving your statistical inferences 1_image_17.png]]
+```
+计算贝叶斯因子代码
+H0<-0.5 #Set the point null hypothesis you want to calculate the Bayes Factor for
+n<-20 #set total trials
+x<-10 #set successes
+aprior<-1 #Set the alpha for the Beta distribution for the prior
+bprior<-1 #Set the beta for the Beta distribution for the prior
 
-# 第四部分 自由选择 
+alikelihood<-x+1 #Calculate the alpha for the Beta distribution for the likelihood
+blikelihood<-n-x+1 #Calculate the beta for the Beta distribution for the likelihood
+aposterior<-aprior+alikelihood-1 #Calculate the alpha for the Beta distribution for the posterior
+bposterior<-bprior+blikelihood-1 #Calculate the beta for the Beta distribution for the posterior
 
-## 第13章 我们该如何为孩子挑选学校？
+theta<-seq(0,1,0.001) #create theta range from 0 to 1
+#png(file="PriorLikelihoodPosterior.png",width=3000,height=3000, res = 500)
+prior <- dbeta(theta, aprior, bprior)
+likelihood <- dbeta(theta, alikelihood, blikelihood)
+posterior <- dbeta(theta, aposterior, bposterior)
+plot(theta, posterior, ylim=c(0, 15), type = "l", lwd = 3, xlab = bquote(theta), ylab = "Density", las = 1)
+lines(theta, prior, col="grey", lwd = 3)
+lines(theta, likelihood, lty = 2, lwd = 3, col="dodgerblue")
+BF10<-dbeta(H0, aposterior, bposterior)/dbeta(H0, aprior, bprior)
+points(H0,dbeta(H0, aposterior, bposterior), pch = 19)
+points(H0,dbeta(H0, aprior, bprior), pch = 19, col="grey")
+segments(H0, dbeta(H0, aposterior, bposterior), H0, dbeta(H0, aprior, bprior), lty=2)
+title(paste('Bayes Factor:',round(BF10,digits=2)))
+```
 
-## 第14章 如何改善现有医疗体系？ 
+## Bayesian Thinking
 
-## 第15章 婚姻有没有可能私人化？
+![[Improving your statistical inferences 1_image_18.png]]
 
-# 第五部分 支持还是反对？ 
+结合了p Value与先验的双线图
 
-## 第16章 欢迎来到助推的世界！
+![[Improving your statistical inferences 1_image_19.png]]
+例：虚无假设为真的事前概率为50%，收集资料得到刚好显著的p Value（0.05），会得到币先验更低估的事后概率
+![[Improving your statistical inferences 1_image_20.png]]
+![[Improving your statistical inferences 1_image_21.png]]
 
-## 第17章 谁会反对助推？
+# Multiple Comparisons, Statistical Power, Pre-Registration
 
-## 第18章 助推：真正的第三条道路
+## Type 1 error control
 
+I型错误，虚无假设为真但是结果显著的情况
+
+I型错误增加的一个主要问题是进行多重比较，从而导致犯下结论有效果实际却没有效果的次数增加。
+
+In a 2x2x2 ANOVA, there are 7 tests. Type 1 error rate: 1-(0.95)$^7$=30%
+
+比较次数与I类错误之间的关系
+![[Improving your statistical inferences 1_image_22.png]]
+比较常见的校正方式（Bonferroni Correction, or Dunn Correction）
+
+$\frac{\alpha}{\text { number of tests }}$ 或( $p \times$ number of tests)
+
+当你只关注一种比较，例如之前的 2x2x2 ANOVA，只关注 2x2x2的结果，那么可以不做校正。但是需要在分析前表明预测。
+
+Optional stopping: Collecting data until p < 0.05 inflates the Type 1 error.
+
+序列分析（Sequential analysis）可以控制补充研究增加I类错误的风险
+
+![[Improving your statistical inferences 1_image_23.png]]
+![[Improving your statistical inferences 1_image_24.png]]
+## Type 2 error control
+
+I型错误，虚无假设为假但是结果显著的情况
+
+不同效应量发现显著性结果的相对检验力
+With n = 100, you had 95% power to observe a d=0.5
+
+![[Improving your statistical inferences 1_image_25.png]]
+
+![[Improving your statistical inferences 1_image_26.png]]
+
+I类错误 可以被纠正，II类错误可能会更严重
+
+## Pre-registration
+
+预注册是控制I类错误的良好方式。
+
+报告作者要在开始收集资料前写出报告，之后按照报告分析资料。
+
+报告的重点是陈列验证主要假设的所有分析计划细节。
+
+也可以继续实施验证性分析，这是介于预注册的验证性研究与探索行研究之间。
+
+探索性分析会增加未知的II类错误，可以通过以下方法：
+- 事前宣告样本量
+- 对于每一项检验定义自变量与因变量
+- 描述分析计划，与统计检验方法
+# Effect Sizes
+
+## Effect Sizes
+
+效应量的意义：
+- 作者可以传递结果的实际显著性 practical significance
+- 效应量可以帮助作者实现元分析方法的结论
+- 效应量可以允许研究者去呈现统计检验力分析
+
+![[Improving your statistical inferences 1_image_27.png]]
+
+效应量分为标准化效应量与非标准化效应量，非标准化效应量没有单位。
+
+结果显著但是效应量很小，实际意义也会很小。但是也要强调小效应对大群体的重要性。
+![[Improving your statistical inferences 1_image_28.png]]
+效应量的分类：
+- d family 标准化的均值差异
+- r family 变量见的关联强度
+
+![[Improving your statistical inferences 1_image_29.png]]
+## Cohen's d
+
+Cohen's d is the difference divided by the standard deviation
+
+被试间d相比被试内d需要考虑变量间的相关性
+![[Improving your statistical inferences 1_image_30.png]]
+
+通过平均值和标准差，可以计算效应量。
+
+Cohen d 是 0 到无穷的数值
+
+Cohen d的可视化，即使是大效应，也有重叠的部分。
+
+![[Improving your statistical inferences 1_image_31.png]]
+
+Hedges' g is a unbiased version of Cohen's d
+
+小样本量下Cohen's d会高估真实效果
+
+$g=d \times\left(1-\frac{3}{4\left(n_1+n_2\right)-9}\right)$
+
+## Correlation
+
+相关是-1到1的连续数据
+
+通过游戏了解相关可视化的网站[Guess the Correlation](https://www.guessthecorrelation.com/)
+
+r与d的转换
+
+$r=\frac{d_s}{\sqrt{d_S^2+\frac{N^2-2 N}{n_1 n_2}}}$
+
+在方差分析或回归分析中，通常不会报告r，而是报告$R^2, \eta^2, \omega^2, \varepsilon^2$
+这些代表测到的真实效果变异：Proportion of total variance explained by an effect
+$R^2, \eta^2$ 是真实效应量的有偏估计（单因素方差分析中$\eta^2 = \eta^2_{p}$）
+$\omega^2, \varepsilon^2$ 是真实效应量的无偏估计（是接近无偏）
+
+这些都表示变量x与y的关系需要多高，才能减除数据中的误差
+
+![[Improving your statistical inferences 1_image_32.png]]
+左边代表总平方和$S S_{tot}$，右边代表残差平方和$S S_{res}$
+$R^2=\frac{S S_{\text {res }}}{S S_{\text {tot }}}$
+
+Cohen’s f 可以通过$\eta^2$得出
+
+Cohen (1988) has provided benchmarks to define small ( f = 0.10), medium (f = 0.25), and large (f = 0.50) effects.
+
+To translate: Cohen (1988) has provided benchmarks to define small ( $\eta^2$= 0.0099), medium ( $\eta^2$= 0.0588), and large ( $\eta^2$= 0.1379) effects.
+
+$f=\sqrt{\frac{\eta^2}{1-\eta^2}}$
+![[Improving your statistical inferences 1_image_33.png]]
+
+# Confidence Intervals, Sample Size Justification, p-Curve analysis
+
+## Confidence Intervals
+
+Confidence intervals are a statement about the percentage of confidence intervals that contain the true parameter value.
+
+置信区间是一段数值区间，宣告真实参数存在于区间之内的百分比
+
+即一项研究重复执行之后，这些结果中有95%包含真实参数值
+
+一项均值为0的研究，95%的置信区间都包括这个结果，黑线代表的为另外5%
+
+![[Improving your statistical inferences 1_image_34.png]]
+
+数据分析通常通过样本Sample预测总体Population，会存在不确定性
+
+例：一个计算好的相关系数，其中的蓝色区域代表不确定性（95%置信区间）
+
+![[Improving your statistical inferences 1_image_35.png]]
+对于正态分布，95%置信区间为：
+$\mathrm{M} \pm 1.96 \times \mathrm{SE}$
+Standard Error $(\mathrm{SE})=\mathrm{SD} / \sqrt{ } \mathrm{N}$
+
+随着样本量的增加，置信区间越短
+![[Improving your statistical inferences 1_image_36.png]]
+置信区间与p直接相关，如果95%置信区间包含0，那么p一定<.05
+
+Highest density intervals (credible interval)
+A 95% credible interval contains the values you find most plausible.
+可信区间（贝叶斯统计中）代表有95%的信心总体参数落在样本参数中
+
+有时，研究人员希望预测单个值所在的区间。这就是所谓的预测区间prediction interval。它总是比置信区间宽得多。原因是单个观测值的变化可能很大，但未来样本的平均值（95% 的时间都在正常置信区间内）的变化会小得多。
+
+## Sample Size Justification
+
+小样本存在较大的变异，以及更多的II类错误，即更多的不准确评估
+
+![[Improving your statistical inferences 1_image_37.png]]
+
+方法1：根据置信区间的宽度决定样本量
+
+![[Improving your statistical inferences 1_image_38.png]]
+
+方法2：根据指定的统计检验力
+
+![[Improving your statistical inferences 1_image_39.png]]
+使用统计检验力最好使用非偏效应量(Hedges' g, $\varepsilon, \omega)$
+
+如果效应量不确定，使用序列分析是一种不错的方法
+
+贝叶斯统计不需要关系需要收集的样本数，收集到你认为结果适当时就好
+
+## P Curve Analysis
+
+P curve 可以评估文件抽屉效应，即使分析的只有p<.05的值
+
+用于回答真实效果与没有真实效果的p值分布看起来会不会不一样
+绿线是有效果的p curve 蓝线是无效果的 p curve
+![[Improving your statistical inferences 1_image_40.png]]
+
+当 p curve 接近无效时，暗示数据无法支持研究者的假设
+
+# Philosophy of Science & Theory
+
+## Philosophy of Science
+
+做有效推论的一种逻辑方法：否定条件 Modus Tollens， 即可证伪性
+![[Improving your statistical inferences 1_image_41.png]]
+![[Improving your statistical inferences 1_image_42.png]]
+
+理论的内核与缓冲带，缓冲带可以部分调整，但是要保留内核
+![[Improving your statistical inferences 1_image_43.png]]
+
+## The Null is Always False
+
+Cohen: 零假设检验字面上说就是现实中不可能存在的事
+
+Crud Factor: 研究中的无关因子
+只要资料够多，这些因素都会呈现显著结果
+
+Crud is systematic noise (there are true effects that you are not interested in), Type 1 errors are variable noise (no true effects).
+
+因此，随机化在证明显著有效性有很重要的意义
+
+NHST rejects the null compared to any alternative. Point predictions are rare.
+
+Strong Inference: Crucial experiments that exclude one alternative hypothesis。关键实验通常可以排除最不可能的假设。
+
+## Theory Construction
+
+理论与统计假设与数据的关系
+![[Improving your statistical inferences 1_image_44.png]]
+
+如何建构理论：
+- 思想实验：如果我自己在这个理论中，我会怎么做，会符合理论吗？
+```
+反过来也可以我这么做了，是因为什么？去发现理论
+```
+- 行为预测：可以从周边人物的行为发现可行的预测
+- 理解他人行为背后的想法
+```
+访谈可以实现
+```
+
+对生活中的一些事件发现 why 和 how
+# Open Science 
+
+## Replications
+
+世界上没有百分百的复制（即验证初试发现的可靠性），因此目的成了理论复制（验证理论的可靠性）
+
+目标1：定义I类错误
+目标2：控制人为因素
+目标3：推广到新的人口中
+目标4：验证潜在假设
+
+潜在的不可复制研究：低的统计检验力，高的p value，令人惊讶的结果
+![[Improving your statistical inferences 1_image_45.png]]
+
+## Publication Bias
+
+出版偏倚最大的原因是科学界以p = 0.05作为标准
+
+这也导致看到的文献几乎都支持某种假设
+
+![[Improving your statistical inferences 1_image_46.png]]
+常见的出版偏倚校正方法：
+- 剪补法
+- 失安全系数（不推荐用，发明者承认存在计算问题）
+- Egger 回顾
+- P curve
+## Open Science
+
+开放科学包括：数据、材料、出版
+
+查询你可以如何分享你发表的论文
+![[Improving your statistical inferences 1_image_47.png]]
+
+数据共享：
+
+最好提供分析脚本与原始数据，最好加上注释
+
+![[Improving your statistical inferences 1_image_48.png]]
+
+储存资料的云端服务器
+
+![[Improving your statistical inferences 1_image_49.png]]
+
+OSF平台
+
+![[Improving your statistical inferences 1_image_50.png]]
