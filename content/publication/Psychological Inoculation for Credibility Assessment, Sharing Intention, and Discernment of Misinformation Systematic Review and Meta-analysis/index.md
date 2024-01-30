@@ -32,6 +32,7 @@ tags:
 
 title: "Psychological Inoculation for Credibility Assessment, Sharing Intention, and Discernment of Misinformation: Systematic Review and Meta-analysis"
 
+links:
 - name: full text
   url: 'http://dx.doi.org/10.2196/49255'
 url_dataset: "https://osf.io/v8pxq"

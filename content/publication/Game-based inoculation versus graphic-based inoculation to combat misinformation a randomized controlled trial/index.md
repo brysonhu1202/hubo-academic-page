@@ -27,6 +27,7 @@ tags:
 
 title: "Game-based inoculation versus graphic-based inoculation to combat misinformation: a randomized controlled trial"
 
+links:
 - name: full text
   url: 'https://doi.org/10.1186/s41235-023-00505-x'
 url_dataset: "https://osf.io/g5hmb/"
