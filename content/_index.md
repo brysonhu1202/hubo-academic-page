@@ -30,6 +30,13 @@ sections:
           location: Si Ping, China
           date_start: '2018-08-01'
           date_end: '2021-07-01'
+        - title: Research Assistant
+          company: School of Psychology, Northeast Normal University
+          company_url: https://psy.nenu.edu.cn/
+          company_logo: NENU
+          location: Chang Chun, China
+          date_start: '2023-09-01'
+          date_end: ''
     design:
       columns: '2'
   - block: collection
@@ -39,7 +46,7 @@ sections:
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
-      count: 5
+      count: 3
       # Filter on criteria
       filters:
         folders:
