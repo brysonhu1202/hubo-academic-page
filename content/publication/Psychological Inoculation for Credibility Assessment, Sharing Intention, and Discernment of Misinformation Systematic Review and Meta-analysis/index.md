@@ -30,10 +30,12 @@ tags:
 - Inoculation
 - Intervention
 
-title: " Psychological Inoculation for Credibility Assessment, Sharing Intention, and Discernment of Misinformation: Systematic Review and Meta-analysis"
+title: "Psychological Inoculation for Credibility Assessment, Sharing Intention, and Discernment of Misinformation: Systematic Review and Meta-analysis"
 
+- name: full text
+  url: 'http://dx.doi.org/10.2196/49255'
 url_dataset: "https://osf.io/v8pxq"
-url_pdf: http://dx.doi.org/10.2196/49255
+url_pdf: https://www.jmir.org/2023/1/e49255/PDF
 
  
 ---

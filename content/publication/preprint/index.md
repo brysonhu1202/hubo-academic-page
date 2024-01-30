@@ -41,7 +41,6 @@ links:
 - name: full text
   url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
 url_pdf: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4377372'
-url_code: 'https://osf.io/a3fch/'
 url_dataset: 'https://osf.io/a3fch/'
 
 ---
