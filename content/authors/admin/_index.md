@@ -26,15 +26,15 @@ bio: My research interests include environmental psychology and misinformation.
 
 # Interests to show in About widget
 interests:
-  - Low-carbon
+  - Nudging
   - Climate change
-  - Misinformation
   - Environmrnatal psychology
+  - Misinformation
 
 # Education to show in About widget
 education:
   courses:
-    - course: Master in Applied Psychology
+    - course: MA in Applied Psychology
       institution: Northeast Normal University
       year: 2021-2023
     - course: BA in Marketing
