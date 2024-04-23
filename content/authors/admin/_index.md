@@ -51,10 +51,10 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: hub897@nenu.edu.cn
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/bryson23437800
+    link: https://twitter.com/hu_bo_psy
   - icon: open-data
     icon_pack: ai
     link: https://osf.io/mxw4j
