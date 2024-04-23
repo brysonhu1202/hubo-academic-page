@@ -51,7 +51,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: hub897@nenu.edu.cn
+    link: mailto:hub897@nenu.edu.cn
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/hu_bo_psy
