@@ -18,11 +18,11 @@ role: Master
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Northeast Normal University (NENU)
-    url: https://www.nenu.edu.cn/
+  - name: Nanjing University
+    url: https://www.nju.edu.cn/en/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include environmental psychology and misinformation.
+bio: My research interests include environmental psychology and behavior intervention.
 
 # Interests to show in About widget
 interests:
@@ -34,6 +34,9 @@ interests:
 # Education to show in About widget
 education:
   courses:
+    - course: Doctoral Student in Social Psychology
+      institution: Nanjing University
+      year: 2024-present
     - course: MA in Applied Psychology
       institution: Northeast Normal University
       year: 2021-2023
@@ -77,6 +80,5 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-
-Bo Hu obtained a Master's degree in Applied Psychology from Northeast Normal University. His research was primarily centered around the issue of misinformation on the internet and how online interventions, based on inoculation theory, can help address this problem. Currently, his research has shifted towards the examination of climate change issues in China. More specifically, his focus is on assessing the current state of low-carbon lifestyles among Chinese citizens through online questionnaires, experiments, and analysis of social media data. Additionally, he also investigates the effectiveness of intervention strategies, such as nudges, in promoting sustainable behavior.
+Hu Bo is currently a doctoral student in social psychology at Nanjing University. His previous research was centered around the issue of misinformation on the internet and how online interventions, based on inoculation theory, can help address this problem. Currently, his research has shifted towards the examination of climate change issues in China. More specifically, his focus is on assessing the current state of low-carbon lifestyles among Chinese citizens through online questionnaires, experiments, and large language model. Additionally, he also investigates the effectiveness of intervention strategies, such as nudges, in promoting low-carbon lifestyles.
 {style="text-align: justify;"}
