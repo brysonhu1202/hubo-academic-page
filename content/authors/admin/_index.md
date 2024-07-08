@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Student
+role: PhD Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -34,7 +34,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: Doctoral Student in Social Psychology
+    - course: PhD Student in Social Psychology
       institution: Nanjing University
       year: 2024-present
     - course: MA in Applied Psychology
