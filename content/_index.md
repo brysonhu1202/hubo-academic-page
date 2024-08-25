@@ -115,7 +115,7 @@ sections:
       text: |-
 
       # Contact (add or remove contact options as necessary)
-      email: hub897@nenu.edu.cn
+      email: hubo@smail.nju.edu.cn
       phone: +86 131 3434 6434
       appointment_url: 'https://calendly.com'
       address:
