@@ -4,7 +4,7 @@ abstract: "Helping children with autism gain a better grasp of vocabulary is an 
 
 authors:
 - Xing-Da Ju
-- Hanqian Wu
+- Han-Qian Wu
 - admin
 - Chang Lu
 
@@ -13,7 +13,7 @@ doi: "https://doi.org/10.1080/20473869.2024.2410532"
 featured: false
 publication: '*International Journal of Developmental Disabilities*
 , October  2024'
-publication_short: "INT J DEV DISABIL"
+publication_short: "International Journal of Developmental Disabilities"
 publication_types:
 - "2"
 publishDate: "2024-10-10T00:00:00Z"

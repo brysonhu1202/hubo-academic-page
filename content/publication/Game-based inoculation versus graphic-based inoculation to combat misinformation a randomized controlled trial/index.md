@@ -15,7 +15,7 @@ doi: "https://doi.org/10.1186/s41235-023-00505-x"
 featured: false
 publication: '*Cognitive Research: Principles and Implications*
 , 31 July 2023'
-publication_short: " Cogn. Research"
+publication_short: "Cognitive Research: Principles and Implications"
 publication_types:
 - "2"
 publishDate: "2023-07-31T00:00:00Z"

@@ -15,7 +15,7 @@ doi: "https://doi.org/10.3390/bs14020116"
 featured: false
 publication: '*Behavioral Sciences*
 , 04 February 2024'
-publication_short: "Behav. Sci."
+publication_short: "Behavioral Sciences"
 publication_types:
 - "2"
 publishDate: "2024-02-04T00:00:00Z"

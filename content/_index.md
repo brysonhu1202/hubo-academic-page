@@ -36,7 +36,7 @@ sections:
           company_logo: NENU
           location: Chang Chun, China
           date_start: '2023-09-01'
-          date_end: ''
+          date_end: '2024-07-01'
     design:
       columns: '2'
   - block: collection
