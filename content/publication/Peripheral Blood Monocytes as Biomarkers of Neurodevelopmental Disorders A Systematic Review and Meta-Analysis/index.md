@@ -1,0 +1,42 @@
+---
+abstract: "Accumulating evidence implicates immune dysregulation and chronic inflammation in neurodevelopmental disorders (NDDs), often manifesting as abnormal alterations in peripheral blood immune cell levels. The mononuclear phagocyte system, including monocytes and microglia, has been increasingly recognized for its involvement in the pathogenesis of NDDs. However, due to inconsistent findings in the literature, whether monocytes can serve as a reliable biomarker for NDDs remains controversial. To address this issue, we conducted a systematic review and meta-analysis of studies examining monocyte counts in NDD individuals. A comprehensive search was conducted across PubMed, Web of Science, and Scopus databases. Variables extracted for analysis encompassed the author's name, year of study, sample size, patient's age, type of disease, mean, standard deviation of monocytes and sex ratio. A total of 2503 articles were found by searching the three databases. After removed duplicates and screening titles, abstracts, and full texts, 17 articles met the inclusion criteria, and 20 independent studies were included in the meta-analysis. The results indicated significantly increased monocyte counts in 5 type NDDs compared to Typical Development (TD) groups (g = 0.36, 95%CI [0.23, 0.49]). Subgroup analyses revealed no significant differences in monocyte counts across different NDD types, gender, or age. These findings suggest that aberrant alterations in monocyte counts are common in NDD cases, indicating their potential as biomarkers for these conditions. Future research should further investigate the role of monocyte in understanding the mechanisms, early detection, and clinical diagnosis of NDDs."
+
+
+authors:
+- Xingda Ju
+- Paihao Zhang
+- Qiang Li
+- Qiuyu Bai
+- admin
+- Jing Xu
+- Chang Lu
+
+
+date: "2025-03-07T00:00:00Z"
+doi: "https://doi.org/10.1007/s10802-025-01303-3"
+featured: false
+publication: '*Research on Child and Adolescent Psychopathology*'
+publication_types:
+- "2"
+publishDate: "2025-03-07T00:00:00Z"
+summary: "Accumulating evidence implicates immune dysregulation and chronic inflammation in neurodevelopmental disorders (NDDs), often manifesting as abnormal alterations in peripheral blood immune cell levels. The mononuclear phagocyte system, including monocytes and microglia, has been increasingly recognized for its involvement in the pathogenesis of NDDs. However, due to inconsistent findings in the literature, whether monocytes can serve as a reliable biomarker for NDDs remains controversial. To address this issue, we conducted a systematic review and meta-analysis of studies examining monocyte counts in NDD individuals. A comprehensive search was conducted across PubMed, Web of Science, and Scopus databases. Variables extracted for analysis encompassed the author's name, year of study, sample size, patient's age, type of disease, mean, standard deviation of monocytes and sex ratio. A total of 2503 articles were found by searching the three databases. After removed duplicates and screening titles, abstracts, and full texts, 17 articles met the inclusion criteria, and 20 independent studies were included in the meta-analysis. The results indicated significantly increased monocyte counts in 5 type NDDs compared to Typical Development (TD) groups (g = 0.36, 95%CI [0.23, 0.49]). Subgroup analyses revealed no significant differences in monocyte counts across different NDD types, gender, or age. These findings suggest that aberrant alterations in monocyte counts are common in NDD cases, indicating their potential as biomarkers for these conditions. Future research should further investigate the role of monocyte in understanding the mechanisms, early detection, and clinical diagnosis of NDDs."
+tags:
+- Meta-analysis
+- Autism
+
+title: "Peripheral Blood Monocytes as Biomarkers of Neurodevelopmental Disorders: A Systematic Review and Meta-Analysis"
+
+links:
+- name: full text
+  url: "https://doi.org/10.1007/s10802-025-01303-3"
+url_dataset: "https://osf.io/mterj"
+
+ 
+---
+
+{{% callout note %}}
+Know more about the article by visit https://doi.org/10.1007/s10802-025-01303-3.
+{{% /callout %}}
+
+
+
