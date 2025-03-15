@@ -13,7 +13,7 @@ authors:
 
 
 date: "2025-03-14T00:00:00Z"
-doi: "https://doi.org/110.1016/j.jad.2025.03.086"
+doi: "https://doi.org/10.1016/j.jad.2025.03.086"
 featured: false
 publication: '*Journal of Affective Disorders*'
 publication_types:
@@ -28,13 +28,13 @@ title: "Mental health problems and influencing factors of parent-child separated
 
 links:
 - name: full text
-  url: "https://doi.org/110.1016/j.jad.2025.03.086"
+  url: "https://doi.org/10.1016/j.jad.2025.03.086"
 
  
 ---
 
 {{% callout note %}}
-Know more about the article by visit https://doi.org/110.1016/j.jad.2025.03.086.
+Know more about the article by visit https://doi.org/10.1016/j.jad.2025.03.086.
 {{% /callout %}}
 
 
