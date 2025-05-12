@@ -43,9 +43,7 @@ education:
     - course: BA in Marketing
       institution: Beijing University of Posts and Telecommunications
       year: 2018-2021
-    - course: Maintenance and Management of Electromechanical Equipment
-      institution: ShiJiaZhuang Posts and Telecommunications Technical College
-      year: 2015-2018
+
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
