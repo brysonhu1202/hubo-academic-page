@@ -11,34 +11,6 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: experience
-    content:
-      title: Experience
-      # Date format for experience
-      #   Refer to https://wowchemy.com/docs/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: Facilities Management
-          company: China Post
-          company_url: http://www.chinapost.com.cn/
-          company_logo: China Post
-          location: Si Ping, China
-          date_start: '2018-08-01'
-          date_end: '2021-07-01'
-        - title: Research Assistant
-          company: School of Psychology, Northeast Normal University
-          company_url: https://psy.nenu.edu.cn/
-          company_logo: NENU
-          location: Chang Chun, China
-          date_start: '2023-09-01'
-          date_end: '2024-07-01'
-    design:
-      columns: '2'
   - block: collection
     content:
       title: Recent Publications
