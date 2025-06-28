@@ -29,7 +29,7 @@ title: "Predicting adolescents’ environmental action: From individual to natio
 links:
 - name: full text
   url: 'https://doi.org/10.1016/j.jenvman.2025.126398'
-  url_pdf: uploads/Predicting adolescents’ environmental action From individual to national-level factors using an explainable machine learning approach.pdf
+url_pdf: uploads/Predicting adolescents’ environmental action From individual to national-level factors using an explainable machine learning approach.pdf
 
 
  
