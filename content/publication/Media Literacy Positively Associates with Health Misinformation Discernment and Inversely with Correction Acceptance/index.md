@@ -26,7 +26,7 @@ links:
 - name: full text
   url: "https://doi.org/10.1093/ijpor/edaf047"
 url_dataset: "https://osf.io/h96am"
-url_pdf: uploads/When Perception Shapes Reality A Large-Scale Study of Mental Health Outcomes in Polluted and Non-Polluted Environments in China.pdf
+url_pdf: uploads/Media Literacy Positively Associates with Health Misinformation Discernment and Inversely with Correction Acceptance.pdf
 
  
 ---
