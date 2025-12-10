@@ -7,7 +7,7 @@ authors:
 - Ziqian Xia
 - Qingcheng Guo
 - Chang Lu
-- ConstantinoSara M. Constantino
+- Sara M. Constantino
 - Xingda Ju
 
 
@@ -28,7 +28,7 @@ title: "Assessing nudge impact: a comprehensive second-order meta-analysis"
 links:
 - name: full text
   url: "https://doi.org/10.1002/bdm.70053"
-url_dataset: "htt io/ugnf9/? view_only=577ccdb3f1194ff3984e82253947a05d)"
+url_dataset: "https://osf.io/ugnf9/?view_only=577ccdb3f1194ff3984e82253947a05d"
 url_pdf: uploads/Assessing nudge impact a comprehensive second-order meta-analysis.pdf
 
  
