@@ -26,9 +26,8 @@ bio: My research interests include environmental psychology and behavior interve
 
 # Interests to show in About widget
 interests:
-  - Nudging
   - Climate change
-  - Environmrnatal psychology
+  - Environmental psychology
   - Misinformation
 
 # Education to show in About widget
