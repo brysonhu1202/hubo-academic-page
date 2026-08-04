@@ -27,7 +27,7 @@ title: "Can rural tourism policy and development influence local bird diversity?
 links:
 - name: full text
   url: "https://doi.org/10.1080/13683500.2026.2712445"
-url_pdf: uploads/Can rural tourism policy and development influence local bird diversity? A quasi-field experiment.pdf
+url_pdf: uploads/Can rural tourism policy and development influence local bird diversity A quasi-field experiment.pdf
 
 
  
