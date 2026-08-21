@@ -33,7 +33,7 @@ sections:
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
-      count: 3
+      count: 1
       # Filter on criteria
       filters:
         folders:
@@ -53,33 +53,6 @@ sections:
       # Choose a layout view
       view: compact
       columns: '2'
-  - block: portfolio
-    id: projects
-    content:
-      title: Projects
-      filters:
-        folders:
-          - project
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
-      # Filter toolbar (optional).
-      # Add or remove as many filters (`filter_button` instances) as you like.
-      # To show all items, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Misinformation
-          tag: Misinformation
-        - name: Environment
-          tag: Environment
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      view: showcase
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
   - block: contact
     id: contact
     content:
@@ -90,7 +63,6 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: hubo@smail.nju.edu.cn
       phone: +86 131 3434 6434
-      appointment_url: 'https://calendly.com'
       address:
         street: No. 5268, Renmin Street
         city: Changchun City, Jilin Province
