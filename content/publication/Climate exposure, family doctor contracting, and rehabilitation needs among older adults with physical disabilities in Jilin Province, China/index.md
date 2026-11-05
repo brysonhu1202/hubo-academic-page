@@ -1,0 +1,40 @@
+---
+title: Climate exposure, family doctor contracting, and rehabilitation needs among older adults with physical disabilities in Jilin Province, China
+authors:
+- Dongyang Guo
+- Dongyu Guo
+- Xiaofeng Wang
+- admin
+date: '2026-11-05T00:00:00Z'
+publishDate: '2026-11-05T00:00:00Z'
+doi: 10.3389/fpubh.2026.1975197
+publication: '*Frontiers in Public Health*'
+publication_types:
+- '2'
+featured: false
+summary: 'Background: Older adults with physical disabilities may face greater difficulty maintaining healthcare contact and expressing their service needs under conditions of climatic stress. In China, family doctor contracting may help sustain access to routine care and rehabilitation-related support, but evidence on its role in this context remains limited.
+
+
+  Methods: This study links a large provincial disability service dataset from Jilin in 2020 with county-level climate indicators to examine whether exposure to unusually hot and cold conditions is associated with current rehabilitation needs among older adults with physical disabilities and whether these associations differ by family doctor contract status. The analysis includes 194,418 respondents. The logistic regression models include standardized measures of relative heat and cold days, individual-level controls, and prefecture indicators, with clustered standard errors.
+
+
+  Results: Higher exposure to extreme heat and extreme cold was associated with a lower likelihood of reporting current rehabilitation needs among respondents without family doctor contracts. For a one-standard deviation (SD) increase in relative heat days (14.2 days) and relative cold days (10.8 days), the respective odds ratios were 0.872 (95% CI 0.792–0.960; p = 0.005) and 0.879 (95% CI 0.790–0.978; p = 0.018), corresponding to 12.8% and 12.1% lower odds of reporting current rehabilitation needs. This pattern was weaker among respondents with family doctor contracts: the interaction ratios of odds ratios were 1.131 (95% CI 1.003–1.276; p = 0.044) for heat and 1.122 (95% CI 0.992–1.269; p = 0.067) for cold.
+
+
+  Conclusion: The findings suggest that climate conditions may shape the expression of rehabilitation needs. Whether family doctor contracting helps maintain service contact, monitoring, and referral pathways under adverse environmental conditions requires prospective evaluation. Strengthening continuous primary care linkages may therefore be relevant to climate adaptation strategies for older adults with physical disabilities, but these cross-sectional associations do not establish clinical protection.'
+links:
+- name: full text
+  url: https://doi.org/10.3389/fpubh.2026.1975197
+abstract: 'Background: Older adults with physical disabilities may face greater difficulty maintaining healthcare contact and expressing their service needs under conditions of climatic stress. In China, family doctor contracting may help sustain access to routine care and rehabilitation-related support, but evidence on its role in this context remains limited.
+
+
+  Methods: This study links a large provincial disability service dataset from Jilin in 2020 with county-level climate indicators to examine whether exposure to unusually hot and cold conditions is associated with current rehabilitation needs among older adults with physical disabilities and whether these associations differ by family doctor contract status. The analysis includes 194,418 respondents. The logistic regression models include standardized measures of relative heat and cold days, individual-level controls, and prefecture indicators, with clustered standard errors.
+
+
+  Results: Higher exposure to extreme heat and extreme cold was associated with a lower likelihood of reporting current rehabilitation needs among respondents without family doctor contracts. For a one-standard deviation (SD) increase in relative heat days (14.2 days) and relative cold days (10.8 days), the respective odds ratios were 0.872 (95% CI 0.792–0.960; p = 0.005) and 0.879 (95% CI 0.790–0.978; p = 0.018), corresponding to 12.8% and 12.1% lower odds of reporting current rehabilitation needs. This pattern was weaker among respondents with family doctor contracts: the interaction ratios of odds ratios were 1.131 (95% CI 1.003–1.276; p = 0.044) for heat and 1.122 (95% CI 0.992–1.269; p = 0.067) for cold.
+
+
+  Conclusion: The findings suggest that climate conditions may shape the expression of rehabilitation needs. Whether family doctor contracting helps maintain service contact, monitoring, and referral pathways under adverse environmental conditions requires prospective evaluation. Strengthening continuous primary care linkages may therefore be relevant to climate adaptation strategies for older adults with physical disabilities, but these cross-sectional associations do not establish clinical protection.'
+---
+
+Source: [Frontiers in Public Health](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1975197/full).

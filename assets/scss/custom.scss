@@ -1,0 +1,25 @@
+// Outlined CV icons with language subscripts, matching the social links' color.
+.custom.custom-cv-en,
+.custom.custom-cv-zh {
+  display: inline-block;
+  width: 1.5em;
+  height: 1em;
+  vertical-align: -0.08em;
+  background-color: currentColor;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.custom.custom-cv-en {
+  -webkit-mask-image: url('/media/icons/cv-en.svg');
+  mask-image: url('/media/icons/cv-en.svg');
+}
+
+.custom.custom-cv-zh {
+  -webkit-mask-image: url('/media/icons/cv-zh.svg');
+  mask-image: url('/media/icons/cv-zh.svg');
+}
